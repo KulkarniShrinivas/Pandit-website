@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import "./home.scss";
+import { Button } from "@mui/material";
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
             Perform your pooja with the Best group of Professional Purohit &
             Pandit
           </p>
-          <button className="btn">Book Now</button>
+          <Button variant="contained" className="btn">
+            book now
+          </Button>
         </div>
       </Tilt>
     </div>
