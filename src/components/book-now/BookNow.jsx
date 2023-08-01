@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import "./home.scss";
 import { Button } from "@mui/material";
 
-const Home = () => {
+const BookNow = () => {
   return (
     <div className="home-component">
       <Tilt>
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default BookNow;

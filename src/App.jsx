@@ -1,11 +1,11 @@
 import "./App.css";
-import Home from "./components/Home";
+import ImageSlider from "./components/image-slider/image-slider";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <div className="app">
+      <ImageSlider />
+    </div>
   );
 }
 
