@@ -1,10 +1,10 @@
 import "./App.css";
-import ImageSlider from "./components/image-slider/image-slider";
+import PopularServices from "./components/popular-services/popular-services";
 
 function App() {
   return (
     <div className="app">
-      <ImageSlider />
+      <PopularServices />
     </div>
   );
 }
