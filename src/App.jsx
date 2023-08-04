@@ -6,9 +6,9 @@ import Cards from "./components/card-list/index";
 function App() {
   return (
     <div className="app">
-      <PopularServices />
+      {/* <PopularServices /> */}
       <Cards />
-      <AboutUs />
+      {/* <AboutUs /> */}
     </div>
   );
 }

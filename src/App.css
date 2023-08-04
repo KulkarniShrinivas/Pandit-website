@@ -1,10 +1,20 @@
 :root {
   --primary-color: #12373f;
   --secondary-color: #f19a33;
+  --primary-color-light: #12373f70;
+}
+
+body {
+  height: 100vh;
 }
 
 .app {
   max-width: 1200px;
   width: 100%;
   padding: 0 10px;
+}
+
+img {
+  width: 100%;
+  display: flex;
 }
