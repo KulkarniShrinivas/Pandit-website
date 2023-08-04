@@ -18,29 +18,30 @@ const CustomButton = ({ text, isContained = true, width = "initial" }) => {
 };
 
 const containedButtonStyle = (width) => ({
-  backgroundColor: "#F7CAC9",
+  backgroundColor: "var(--primary-color)",
   width: width,
-  color: "#241311",
-  border: "1px solid #F7CAC9",
+  color: "white",
+  border: "1px solid var(--primary-color)",
   textTransform: "capitalize",
   fontWeight: "700",
   padding: "10px 30px",
 
   "&:hover": {
     backgroundColor: "white",
-    border: "1px solid #F7CAC9",
+    border: "1px solid var(--primary-color)",
+    color: "var(--primary-color)",
   },
 });
 
 const outlinedButtonStyle = (width) => ({
   width: width,
-  color: "#241311",
-  border: "2px solid #F7CAC9",
+  color: "var(--primary-color)",
+  border: "1px solid var(--primary-color)",
   textTransform: "capitalize",
   fontWeight: "700",
   padding: "10px 30px",
   "&:hover": {
-    border: "2px solid #857D7A",
+    border: "1px solid var(--primary-color)",
   },
 });
 

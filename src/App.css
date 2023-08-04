@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #12373f;
+  --secondary-color: #f19a33;
+}
+
 .app {
   max-width: 1200px;
   width: 100%;
