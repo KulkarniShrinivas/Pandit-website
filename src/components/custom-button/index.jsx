@@ -1,48 +1,19 @@
-import { Button } from "@mui/material";
-import React from "react";
+import "./custom-button.css";
 
-const CustomButton = ({ text, isContained = true, width = "initial" }) => {
+const CustomButton = ({ text, isContained = true }) => {
   return (
     <>
       {isContained ? (
-        <Button variant={"contained"} sx={containedButtonStyle(width)}>
-          {text}
-        </Button>
+        <button className="contained">
+          <span>{text}</span>
+        </button>
       ) : (
-        <Button variant={"outlined"} sx={outlinedButtonStyle(width)}>
-          {text}
-        </Button>
+        <button className="outlined">
+          <span>{text}</span>
+        </button>
       )}
     </>
   );
 };
-
-const containedButtonStyle = (width) => ({
-  backgroundColor: "var(--primary-color)",
-  width: width,
-  color: "white",
-  border: "1px solid var(--primary-color)",
-  textTransform: "capitalize",
-  fontWeight: "700",
-  padding: "10px 30px",
-
-  "&:hover": {
-    backgroundColor: "white",
-    border: "1px solid var(--primary-color)",
-    color: "var(--primary-color)",
-  },
-});
-
-const outlinedButtonStyle = (width) => ({
-  width: width,
-  color: "var(--primary-color)",
-  border: "1px solid var(--primary-color)",
-  textTransform: "capitalize",
-  fontWeight: "700",
-  padding: "10px 30px",
-  "&:hover": {
-    border: "1px solid var(--primary-color)",
-  },
-});
 
 export default CustomButton;

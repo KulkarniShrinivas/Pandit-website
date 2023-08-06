@@ -5,7 +5,6 @@
   grid-template-areas:
     "item1 item2 "
     "item3 item4 ";
-  max-width: 1200px;
   width: 100%;
   margin: auto;
 
@@ -14,8 +13,10 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem;
     color: var(--primary-color-dark);
+    border-radius: 10px;
+    transition: all 1s;
 
     h3 {
       font-size: 3rem;
@@ -35,6 +36,11 @@
       font-weight: 400;
       color: var(--primary-color);
     }
+  }
+
+  .owner-item:hover,
+  .owner-item:focus {
+    box-shadow: 0 0 10px var(--primary-color-light);
   }
 
   .item-1 {
@@ -62,5 +68,12 @@
       "item2"
       "item3"
       "item4";
+
+    padding: 1rem;
+    .owner-item {
+      h3 {
+        margin-top: 1rem;
+      }
+    }
   }
 }

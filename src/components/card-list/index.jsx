@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import Card from "../card";
+import CustomButton from "../custom-button";
+import { cardListData } from "./cardListData";
 
 const CardList = () => {
   const cardListRef = useRef();
 
   function scrollToRight() {
-    console.log(cardListRef.current);
-    // const chatContainer = document.getElementById("chatContainer");
     cardListRef.current.scrollLeft =
       cardListRef.current.scrollWidth - cardListRef.current.clientWidth;
   }
@@ -17,16 +17,17 @@ const CardList = () => {
   }, []);
 
   return (
-    <section className="card-list-section">
-      <h2>Recommended Pujas</h2>
-      <div ref={cardListRef} className="card-list">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-    </section>
+    <>
+      <section className="card-list-section">
+        <h2>Recommended Pujas</h2>
+        <CustomButton text={"View All Pujas"} />
+        <div ref={cardListRef} className="card-list">
+          {cardListData.map((card) => (
+            <Card poojaTitle={card.poojaTitle} src={card.src} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
