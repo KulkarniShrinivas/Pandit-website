@@ -8,7 +8,10 @@ const Card = () => {
       <header className="card-header">
         <h2>Ganesh Puja</h2>
       </header>
-      <img src={ganeshImage} className="card-img" />
+      <div className="card-img">
+        <img src={ganeshImage} />
+      </div>
+
       <div className="tags">
         <a href="#">Book Now</a>
         <a href="#">View More</a>
