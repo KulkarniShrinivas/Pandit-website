@@ -2,9 +2,9 @@ import React from "react";
 import "./style.scss";
 import Card from "../card";
 
-const Cards = () => {
+const CardList = () => {
   return (
-    <section class="card-list">
+    <section className="card-list">
       <Card />
       <Card />
       <Card />
@@ -14,4 +14,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default CardList;

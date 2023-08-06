@@ -1,14 +1,21 @@
 import "./App.css";
-import PopularServices from "./components/popular-services/popular-services";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Cards from "./components/card-list/index";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/index";
+import PhotoGallery from "./pages/photo-gallery/index";
+import ContactUs from "./pages/contact-us/index";
+import Astrologer from "./pages/astrologer/index";
 
 function App() {
   return (
     <div className="app">
-      {/* <PopularServices /> */}
-      <Cards />
-      {/* <AboutUs /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/photos" element={<PhotoGallery />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/astro" element={<Astrologer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
