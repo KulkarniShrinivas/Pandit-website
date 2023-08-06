@@ -2,16 +2,13 @@
   --primary-color: #12373f;
   --secondary-color: #f19a33;
   --primary-color-light: #12373f70;
-}
-
-body {
-  height: 100vh;
+  --primary-color-dark: #071619;
 }
 
 .app {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 10px;
+  /* max-width: 1200px; */
+  /* width: 100%; */
+  /* padding: 0 10px; */
 }
 
 img {

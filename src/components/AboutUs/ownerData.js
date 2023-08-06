@@ -1,19 +1,22 @@
 const ownerData = {
-  yearsOfExperience: "15+",
+  yearsOfExperience: "12+",
   subheading: "Years of Experience",
+  yearDescription: "in South Kashi’s famous Gokarna mahabaleshwaram",
 
-  happyClients: "10K+",
-  clientsubheading: "Happy Clients",
+  happyClients: "1K+",
+  clientsubheading: "Pujas Performed",
+  clientDescription:
+    "in different states like Pune, Mumbai, Delhi, Hyderabad etc…",
 
-  experiencedTrainers: "15+",
-  trainersubheading: "Experienced Trainers",
+  knowledgeCount: "500+",
+  knowledgeHeading: "Pujas & Havan knowledge",
+  knowledgeDescription:
+    "like Rigveda yaga, shata chandi havan, Ganapathi homa etc.",
 
-  monthlyClasses: "24+",
-  monthsubheading: "Monthly Classes",
-
-  quote:
-    "ॐ भूर्भुवः स्व: तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात् ॥",
-  quoteAuthor: "Gaytri Mantra",
+  language: "9+",
+  languageSubheading: "Languages Known",
+  languageDescription:
+    "Kannada,Marathi,Hindi,English,Goa-Konkani,Tamil,Telugu,Tulu,Karwar Konkani",
 };
 
 export default ownerData;

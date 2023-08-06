@@ -4,39 +4,27 @@ import ownerData from "./ownerData";
 
 const AboutUs = () => {
   return (
-    <section className="about-us-container">
-      <h2 className="about-us-heading">WHY US?</h2>
-      <div className="about-us">
-        <div className="owner-container">
-          <div className="owner-column">
-            <div className="owner-item">
-              <h2>{ownerData.yearsOfExperience}</h2>
-              <h3>{ownerData.subheading}</h3>
-            </div>
-            <div className="owner-item">
-              <h2>{ownerData.happyClients}</h2>
-              <h3>{ownerData.clientsubheading}</h3>
-            </div>
-          </div>
+    <section className="about-us">
+      <div className="owner-item item-1">
+        <h3>{ownerData.yearsOfExperience}</h3>
+        <h4>{ownerData.subheading}</h4>
+        <p>{ownerData.yearDescription}</p>
+      </div>
+      <div className="owner-item item-2">
+        <h3>{ownerData.happyClients}</h3>
+        <h4>{ownerData.clientsubheading}</h4>
+        <p>{ownerData.clientDescription}</p>
+      </div>
 
-          <div className="owner-column">
-            <div className="owner-item">
-              <h2>{ownerData.experiencedTrainers}</h2>
-              <h3>{ownerData.trainersubheading}</h3>
-            </div>
-            <div className="owner-item">
-              <h2>{ownerData.monthlyClasses}</h2>
-              <h3>{ownerData.monthsubheading}</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="quote-container">
-          <div className="owner-item">
-            <h3 className="quote">{ownerData.quote}</h3>
-            <p>- {ownerData.quoteAuthor}</p>
-          </div>
-        </div>
+      <div className="owner-item item-3">
+        <h3>{ownerData.knowledgeCount}</h3>
+        <h4>{ownerData.knowledgeHeading}</h4>
+        <p>{ownerData.knowledgeDescription}</p>
+      </div>
+      <div className="owner-item item-4">
+        <h3>{ownerData.language}</h3>
+        <h4>{ownerData.languageSubheading}</h4>
+        <p>{ownerData.languageDescription}</p>
       </div>
     </section>
   );
