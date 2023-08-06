@@ -2,7 +2,7 @@ import React from "react";
 import ganeshImage from "../../assets/ganesh_small_comp.png";
 import "./style.scss";
 
-const Card = () => {
+const Card = ({ poojaTitle, src }) => {
   return (
     <article className="card">
       <header className="card-header">
