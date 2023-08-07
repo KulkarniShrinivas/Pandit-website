@@ -16,7 +16,7 @@
     padding: 0 2rem;
     color: var(--primary-color-dark);
     border-radius: 10px;
-    transition: all 1s;
+    transition: all 0.5s;
 
     h3 {
       font-size: 3rem;
@@ -40,7 +40,7 @@
 
   .owner-item:hover,
   .owner-item:focus {
-    box-shadow: 0 0 10px var(--primary-color-light);
+    box-shadow: 5px 5px 5px var(--primary-color-light);
   }
 
   .item-1 {
