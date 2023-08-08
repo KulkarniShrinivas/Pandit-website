@@ -1,15 +1,14 @@
 import React from "react";
-import ganeshImage from "../../assets/ganesh_small_comp.png";
 import "./style.scss";
 
 const Card = ({ poojaTitle, src }) => {
   return (
     <article className="card">
       <header className="card-header">
-        <h2>Ganesh Puja</h2>
+        <h2>{poojaTitle}</h2>
       </header>
       <div className="card-img">
-        <img src={ganeshImage} />
+        <img src={src} />
       </div>
 
       <div className="tags">

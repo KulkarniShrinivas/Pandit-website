@@ -27,7 +27,6 @@ const Main = () => {
     <section className="main">
       <div className="half-circle"></div>
       <div className="half-circle-2"></div>
-
       <div className="main-headings">
         <h1>Experience</h1>
         <span ref={el} />

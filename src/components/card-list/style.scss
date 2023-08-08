@@ -6,7 +6,7 @@ a {
   margin: auto;
   text-align: center;
   box-shadow: inset -1rem 0 2rem var(--primary-color-light);
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   text-transform: uppercase;
   position: relative;
   h2 {
@@ -57,7 +57,7 @@ a {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .card-list-section {
     border-radius: 0;
   }
