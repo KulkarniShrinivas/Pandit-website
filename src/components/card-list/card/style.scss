@@ -2,7 +2,6 @@
   padding: 1rem 2rem;
   display: inline-block;
   height: 400px !important;
-  scroll-snap-align: start;
   border-radius: 16px;
   background: white;
   box-shadow: -1rem 0 3rem var(--primary-color-light);
@@ -24,6 +23,14 @@
 .card:hover {
   rotate: 10deg;
   transform: translateY(-1rem);
+}
+
+.card:first-child {
+  margin-left: 800px;
+}
+
+.card:last-child {
+  margin-right: 0;
 }
 
 .card:not(:first-child) {
@@ -114,4 +121,16 @@
   box-decoration-break: clone;
   background-clip: text;
   border-color: white;
+}
+
+@media (min-width: 800px) {
+  .card:first-child {
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card:first-child {
+    margin-left: 0;
+  }
 }

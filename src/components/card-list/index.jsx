@@ -9,7 +9,12 @@ const CardList = () => {
 
   function scrollToRight() {
     cardListRef.current.scrollLeft =
-      cardListRef.current.scrollWidth - cardListRef.current.clientWidth;
+      cardListRef.current.scrollWidth - cardListRef.current.clientWidth - 100;
+
+    console.log(
+      cardListRef.current.scrollWidth,
+      cardListRef.current.clientWidth - 100
+    );
   }
 
   useEffect(() => {
