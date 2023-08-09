@@ -1,6 +1,6 @@
 .home-component {
   background-image: linear-gradient(#cb356b, #bd3f32),
-    url("../assets/ganesh_small_comp.png");
+    url("../../assets/ganesh_small_comp.png");
   background-size: cover;
   background-blend-mode: multiply;
   height: 100vh;
@@ -66,7 +66,7 @@
 // Desktop
 @media (min-width: 950px) {
   .home-component {
-    background-image: url("../assets/ganesh_comp.png");
+    background-image: url("../../assets/ganesh_comp.png");
     justify-content: flex-start;
 
     .card {

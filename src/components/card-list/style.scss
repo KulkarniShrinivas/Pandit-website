@@ -5,6 +5,7 @@ a {
 .card-list-section {
   margin: auto;
   text-align: center;
+  justify-content: flex-end;
   box-shadow: inset -1rem 0 2rem var(--primary-color-light);
   border-radius: 15px 15px 0 0;
   text-transform: uppercase;
@@ -37,6 +38,7 @@ a {
   display: flex;
   padding: 5rem 2rem;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
   margin: 0 auto;
   width: 100%;
   white-space: nowrap;

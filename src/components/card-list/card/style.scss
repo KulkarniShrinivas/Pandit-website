@@ -2,7 +2,7 @@
   padding: 1rem 2rem;
   display: inline-block;
   height: 400px !important;
-  width: 500px !important;
+  scroll-snap-align: start;
   border-radius: 16px;
   background: white;
   box-shadow: -1rem 0 3rem var(--primary-color-light);

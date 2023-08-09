@@ -13,7 +13,7 @@ const CardList = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("load", scrollToRight);
+    scrollToRight();
   }, []);
 
   return (
