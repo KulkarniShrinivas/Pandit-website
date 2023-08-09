@@ -6,7 +6,7 @@ a {
   margin: auto;
   text-align: center;
   justify-content: flex-end;
-  box-shadow: inset -1rem 0 2rem var(--primary-color-light);
+  // box-shadow: inset -1rem 0 2rem var(--primary-color-light);
   border-radius: 15px 15px 0 0;
   text-transform: uppercase;
   position: relative;
@@ -15,6 +15,24 @@ a {
     padding-top: 5rem;
     color: var(--primary-color);
   }
+}
+
+.card-list-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  bottom: 3.6rem;
+  width: 5px;
+  border-radius: 5px;
+  background: linear-gradient(
+    130deg,
+    var(--secondary-color),
+    var(--primary-color) 41.07%,
+    #319197 76.05%
+  );
+  box-shadow: 10px 0 20px 3px var(--primary-color-light);
+  z-index: 2;
 }
 
 .card-list-section::after {
