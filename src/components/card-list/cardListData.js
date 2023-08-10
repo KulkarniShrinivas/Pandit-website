@@ -1,24 +1,28 @@
 import ganeshImage from "../../assets/ganesh_small_comp.png";
+import Satyanarayan from "../../assets/satya.png";
+import grihapravesh from "../../assets/grihapravesh.jpeg";
+import Marriage from "../../assets/marriage.jpg";
+import udakshanti from "../../assets/udakshanti.png";
 
 export const cardListData = [
   {
-    poojaTitle: "Ganesh Puja",
-    src: ganeshImage,
+    poojaTitle: "Marriage Puja",
+    src: Marriage,
   },
   {
-    poojaTitle: "Ganesh Puja",
-    src: ganeshImage,
+    poojaTitle: "Udaka Shanti ",
+    src: udakshanti,
   },
   {
-    poojaTitle: "Ganesh Puja",
-    src: ganeshImage,
+    poojaTitle: "GrihaPravesh Puja.",
+    src: grihapravesh,
   },
   {
-    poojaTitle: "Ganesh Puja",
-    src: ganeshImage,
+    poojaTitle: "Satyanarayan Puja",
+    src: Satyanarayan,
   },
   {
-    poojaTitle: "Ganesh Puja",
+    poojaTitle: "Ganapati Puja",
     src: ganeshImage,
   },
 ];
