@@ -10,10 +10,11 @@ a {
   border-radius: 15px 15px 0 0;
   text-transform: uppercase;
   position: relative;
-  h2 {
+  .card-list-heading {
     font-size: 3rem;
     padding-top: 5rem;
     color: var(--primary-color);
+    font-weight: 900;
   }
 }
 
@@ -86,7 +87,7 @@ a {
 
 @media (max-width: 600px) {
   .card-list-section {
-    h2 {
+    .card-list-heading {
       font-size: 1.8rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;

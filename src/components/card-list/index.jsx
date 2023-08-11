@@ -3,9 +3,11 @@ import "./style.scss";
 import Card from "./card/index";
 import CustomButton from "../custom-button";
 import { cardListData } from "./cardListData";
+import { useNavigate } from "react-router-dom";
 
 const CardList = () => {
   const cardListRef = useRef();
+  const navigate = useNavigate();
 
   function scrollToRight() {
     cardListRef.current.scrollLeft =
@@ -24,11 +26,18 @@ const CardList = () => {
   return (
     <>
       <section className="card-list-section">
-        <h2>Recommended Pujas</h2>
-        <CustomButton text={"View All Pujas"} />
+        <h2 className="card-list-heading">Recommended Pujas</h2>
+        <CustomButton
+          text={"View All Pujas"}
+          onClick={() => navigate("/allpujas")}
+        />
         <div ref={cardListRef} className="card-list">
-          {cardListData.map((card) => (
-            <Card poojaTitle={card.poojaTitle} src={card.src} />
+          {cardListData.map((card, index) => (
+            <Card
+              key={card.poojaTitle + index}
+              poojaTitle={card.poojaTitle}
+              src={card.src}
+            />
           ))}
         </div>
       </section>

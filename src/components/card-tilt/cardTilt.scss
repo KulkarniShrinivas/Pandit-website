@@ -1,8 +1,8 @@
 .tilt-card {
   color: var(--primary-color);
   margin: 0;
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 180px;
   text-align: center;
   background-color: white;
   border: 1px solid var(--primary-color-extraLight);
@@ -15,19 +15,38 @@
   align-items: center;
   justify-content: center;
 
-  h1 {
+  .card-tilt-heading {
     font-weight: 700;
     text-transform: uppercase;
+    font-weight: 1rem;
+    z-index: 2;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    background-color: var(--primary-color);
+    .card-tilt-tag {
+      color: white;
+    }
   }
+  transition: all 1s;
+}
+.tilt-card::before {
+  background-color: white; /* Fallback color if the image is slow to load */
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.5s !important;
+  border-radius: 20px;
 }
 
-// Tablet
-@media (min-width: 600px) {
+.tilt-card:hover::before,
+.tilt-card:focus::before {
+  opacity: 1;
 }
 
-// Desktop
-@media (min-width: 950px) {
-  .tilt-card {
-    // background-color: var(--primary-color-extraLight);
+.card-tilt-heading:hover,
+.card-tilt-heading:focus {
+  background-color: var(--secondary-color);
+  .card-tilt-tag {
+    color: var(--primary-color);
   }
 }

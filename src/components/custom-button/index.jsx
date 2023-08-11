@@ -1,14 +1,18 @@
 import "./custom-button.css";
 
-const CustomButton = ({ text, isContained = true }) => {
+const CustomButton = ({
+  text,
+  isContained = true,
+  onClick = () => console.log("clicked"),
+}) => {
   return (
     <>
       {isContained ? (
-        <button className="contained">
+        <button className="contained" onClick={onClick}>
           <span>{text}</span>
         </button>
       ) : (
-        <button className="outlined">
+        <button className="outlined" onClick={onClick}>
           <span>{text}</span>
         </button>
       )}

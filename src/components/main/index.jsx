@@ -2,15 +2,14 @@ import React, { useEffect, useRef } from "react";
 import { mainData } from "./mainData";
 import "./main.scss";
 import Typed from "typed.js";
-import homeImg from "../../assets/home.png";
+import homeImg from "../../assets/home.webp";
 import CustomButton from "../custom-button";
-import left from "../../assets/pLeft.jpeg";
-import right from "../../assets/pRight.jpeg";
+import left from "../../assets/pLeft.webp";
+import right from "../../assets/pRight.webp";
 import Tilt from "react-parallax-tilt";
 
 const Main = () => {
   const el = useRef(null);
-  console.log(el);
 
   useEffect(() => {
     if (el.current) {

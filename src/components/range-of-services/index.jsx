@@ -2,8 +2,9 @@ import React from "react";
 import "./servicesRange.scss";
 import { Box, useMediaQuery } from "@mui/material";
 import flowersLine from "../../assets/flowers.jpeg";
-import bigFlowerLine from "../../assets/flowers_big.png";
+import bigFlowerLine from "../../assets/flowers_big.webp";
 import CardTilt from "../card-tilt/cardTilt";
+import { rangeData } from "./rangeServicesData";
 
 const RangeOfServices = () => {
   const isMobileScreen = useMediaQuery("(max-width: 800px)");
@@ -24,10 +25,9 @@ const RangeOfServices = () => {
         </h2>
       </div>
       <div className="services-list">
-        <CardTilt title={"Puja"} />
-        <CardTilt title={"E-Puja"} />
-        <CardTilt title={"Homa/Havana"} />
-        <CardTilt title={"astrology"} />
+        {rangeData.map((r, index) => (
+          <CardTilt key={r.title + index} img={r.img} title={r.title} />
+        ))}
       </div>
     </Box>
   );

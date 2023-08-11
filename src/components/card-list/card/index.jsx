@@ -8,7 +8,7 @@ const Card = ({ poojaTitle, src }) => {
         <h2>{poojaTitle}</h2>
       </header>
       <div className="card-img">
-        <img src={src} />
+        <img src={src} loading="lazy" />
       </div>
 
       <div className="tags">
