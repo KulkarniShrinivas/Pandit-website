@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from "react";
-
+import CustomButton from "../../custom-button";
 import "./service-card.scss";
-import CustomButton from "../custom-button";
 
 const ServiceCard = ({ title, text, src }) => {
   return (
@@ -10,7 +8,8 @@ const ServiceCard = ({ title, text, src }) => {
       <h3>{title}</h3>
       <p>{text}</p>
       <div className="btn-show">
-        <CustomButton text="Book Now" isContained={false} />
+        <CustomButton text="Book Now" isContained={true} />
+        <CustomButton text="View Now" isContained={false} />
       </div>
     </div>
   );

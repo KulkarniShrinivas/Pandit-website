@@ -27,7 +27,6 @@
     .card-tilt-tag {
       color: white;
       text-shadow: 0 0 5px var(--primary-color-light);
-      font-size: 1.5rem;
     }
   }
   transition: all 1s;
@@ -37,5 +36,11 @@
   .tilt-card {
     width: 280px;
     height: 280px;
+
+    .card-tilt-heading {
+      .card-tilt-tag {
+        font-size: 1.7rem;
+      }
+    }
   }
 }

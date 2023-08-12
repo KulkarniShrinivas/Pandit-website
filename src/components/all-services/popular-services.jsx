@@ -1,8 +1,7 @@
-import React from "react";
-import ServiceCard from "../service-card/service-card";
-import { servicesData } from "./popular-services-data";
+import CustomButton from "../custom-button/index";
 import "./popular-services.scss";
-import CustomButton from "../custom-button";
+import ServiceCard from "./service-card/service-card";
+import { servicesData } from "./popular-services-data";
 
 const PopularServices = () => {
   return (
@@ -17,9 +16,6 @@ const PopularServices = () => {
             src={service.src}
           />
         ))}
-      </div>
-      <div className="view-more">
-        <CustomButton text="View More" width="150px" />
       </div>
     </div>
   );

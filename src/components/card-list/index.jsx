@@ -28,7 +28,7 @@ const CardList = () => {
       <section className="card-list-section">
         <h2 className="card-list-heading">Recommended Pujas</h2>
         <CustomButton
-          text={"View All Pujas"}
+          text={"See All Puja Services"}
           onClick={() => navigate("/allpujas")}
         />
         <div ref={cardListRef} className="card-list">
