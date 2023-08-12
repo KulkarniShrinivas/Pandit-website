@@ -7,19 +7,24 @@
 
   .services-heading {
     width: 100%;
+    text-align: center;
+    margin-bottom: 3em;
     h2 {
       margin-top: 0;
       padding: 0 1rem;
       font-size: 2rem;
-      text-align: center;
       color: var(--primary-color);
       font-weight: 800;
       text-shadow: 0 0 5px var(--primary-color-extraLight);
-
+      margin: 0 0 1rem;
       span {
         transform: skew(0);
         color: var(--secondary-color);
       }
+    }
+
+    p {
+      margin-top: 0;
     }
   }
 
@@ -33,10 +38,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin: 1rem 1rem 5rem;
   }
 }
 

@@ -23,6 +23,7 @@ const RangeOfServices = () => {
         <h2>
           We provide a range of <span>services</span>
         </h2>
+        <p>Seamless and Reverent Puja Services Delivered to Your Doorstep</p>
       </div>
       <div className="services-list">
         {rangeData.map((r, index) => (

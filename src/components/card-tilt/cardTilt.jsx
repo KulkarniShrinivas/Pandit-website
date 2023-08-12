@@ -8,17 +8,9 @@ const CardTilt = (props) => {
     <Tilt>
       <Box
         sx={{
-          "&::before": {
-            content: `""`,
-            background: `url(${props.img})`,
-            position: "absolute",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          },
+          background: `url(${props.img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
         className="tilt-card"
       >

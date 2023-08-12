@@ -6,7 +6,7 @@
   text-align: center;
   background-color: white;
   border: 1px solid var(--primary-color-extraLight);
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0px 4px 30px var(--primary-color-light);
   backdrop-filter: blur(5px);
   padding: 40px 10px;
@@ -22,31 +22,20 @@
     z-index: 2;
 
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
 
-    background-color: var(--primary-color);
     .card-tilt-tag {
       color: white;
+      text-shadow: 0 0 5px var(--primary-color-light);
+      font-size: 1.5rem;
     }
   }
   transition: all 1s;
 }
-.tilt-card::before {
-  background-color: white; /* Fallback color if the image is slow to load */
-  opacity: 0; /* Initially transparent */
-  transition: opacity 0.5s !important;
-  border-radius: 20px;
-}
 
-.tilt-card:hover::before,
-.tilt-card:focus::before {
-  opacity: 1;
-}
-
-.card-tilt-heading:hover,
-.card-tilt-heading:focus {
-  background-color: var(--secondary-color);
-  .card-tilt-tag {
-    color: var(--primary-color);
+@media (min-width: 800px) {
+  .tilt-card {
+    width: 280px;
+    height: 280px;
   }
 }
