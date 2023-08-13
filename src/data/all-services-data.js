@@ -53,7 +53,7 @@ export const servicesData = [
       "Conducting a Pooja for the Marriage Ceremony ensures the blessings of ancestors, deities, and a harmonious, prosperous, and joyous married life for the couple.",
     ],
     benefits: {
-      title: "Appropriate Timing for Vivah Puja (Marriage Ceremony):",
+      title: "Appropriate Timing for Vivah Puja (Marriage Ceremony)",
       points: [
         {
           title: "Auspicious Muhurat:",

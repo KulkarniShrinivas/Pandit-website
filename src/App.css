@@ -1,8 +1,9 @@
 :root {
   --primary-color: #12373f;
   --secondary-color: #f19a33;
-  --secondary-color-light: #f19a3330; /* used in box shadow of main half-circle*/
-  --primary-color-extraLight: #12373f30; /* used in box shadow of main half - circle */
+  --secondary-color-light: #f19a3330;
+  --secondary-color-dark: #603d14;
+  --primary-color-extraLight: #12373f30;
   --primary-color-light: #12373f70;
   --primary-color-dark: #071619;
   --range-of-services-bg: #fbf6f0;
