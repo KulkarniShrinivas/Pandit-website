@@ -37,9 +37,10 @@ const CardList = () => {
             .slice(0, 5)
             .map((card, index) => (
               <Card
-                key={card.poojaTitle + index}
-                poojaTitle={card.poojaTitle}
+                key={card.title + index}
+                poojaTitle={card.title}
                 src={card.src}
+                handleViewMoreClick={() => navigate("/puja/" + card.id)}
               />
             ))}
         </div>

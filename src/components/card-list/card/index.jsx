@@ -1,19 +1,19 @@
 import React from "react";
 import "./style.scss";
 
-const Card = ({ poojaTitle, src }) => {
+const Card = ({ poojaTitle, src, handleViewMoreClick }) => {
   return (
     <article className="card">
       <header className="card-header">
-        <h2>{poojaTitle}</h2>
+        <h2 onClick={handleViewMoreClick}>{poojaTitle}</h2>
       </header>
       <div className="card-img">
         <img src={src} loading="lazy" />
       </div>
 
       <div className="tags">
-        <a href="#">Book Now</a>
-        <a href="#">View More</a>
+        <a>Book Now</a>
+        <a onClick={handleViewMoreClick}>View More</a>
       </div>
     </article>
   );

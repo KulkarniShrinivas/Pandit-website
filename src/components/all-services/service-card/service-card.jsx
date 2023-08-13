@@ -1,12 +1,15 @@
 import { Box } from "@mui/material";
 import "./styles.js";
+import Tilt from "react-parallax-tilt";
 import { serviceCardStyles } from "./styles.js";
 
-const ServiceCard = ({ text, src }) => {
+const ServiceCard = ({ text, src, handleClick }) => {
   return (
-    <Box sx={serviceCardStyles(src)}>
-      <p>{text}</p>
-    </Box>
+    <Tilt>
+      <Box onClick={handleClick} sx={serviceCardStyles(src)}>
+        <p>{text}</p>
+      </Box>
+    </Tilt>
   );
 };
 

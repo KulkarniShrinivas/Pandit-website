@@ -1,4 +1,3 @@
-import React from "react";
 import "./servicesRange.scss";
 import { Box, useMediaQuery } from "@mui/material";
 import flowersLine from "../../assets/flowers.jpeg";
