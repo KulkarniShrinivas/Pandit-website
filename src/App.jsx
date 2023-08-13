@@ -6,11 +6,13 @@ import ContactUs from "./pages/contact-us/index";
 import Astrologer from "./pages/astrologer/index";
 import AllPujaServices from "./pages/all-pujas/all-services";
 import PujaPage from "./pages/puja-page/pujaPage";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allpujas/:id" element={<AllPujaServices />} />
