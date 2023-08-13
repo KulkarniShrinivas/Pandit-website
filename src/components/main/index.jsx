@@ -7,6 +7,7 @@ import CustomButton from "../custom-button";
 import left from "../../assets/pLeft.webp";
 import right from "../../assets/pRight.webp";
 import Tilt from "react-parallax-tilt";
+import { whatsappData } from "../../utils/whatsapp";
 
 const Main = () => {
   const el = useRef(null);
@@ -42,7 +43,7 @@ const Main = () => {
         <span ref={el} />
       </div>
       <div className="btn-container">
-        <CustomButton text={"Book Now"} />
+        <CustomButton text={"Book Now"} onClick={() => whatsappData()} />
       </div>
       <div className="fade-div"></div>
     </section>

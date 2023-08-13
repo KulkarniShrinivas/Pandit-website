@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import { whatsappData } from "../../../utils/whatsapp";
 
 const Card = ({ poojaTitle, src, handleViewMoreClick }) => {
   return (
@@ -12,7 +13,7 @@ const Card = ({ poojaTitle, src, handleViewMoreClick }) => {
       </div>
 
       <div className="tags">
-        <a>Book Now</a>
+        <a onClick={() => whatsappData()}>Book Now</a>
         <a onClick={handleViewMoreClick}>View More</a>
       </div>
     </article>

@@ -5,6 +5,7 @@ import { servicesData } from "../../data/all-services-data";
 import CustomButton from "../../components/custom-button";
 import { Box } from "@mui/material";
 import Tilt from "react-parallax-tilt";
+import { whatsappData } from "../../utils/whatsapp";
 
 const PujaPage = () => {
   const [pujaData, setPujaData] = useState(null);
@@ -39,7 +40,7 @@ const PujaPage = () => {
             <div className="puja-header">
               <h1 className="puja-title">{pujaData?.title}</h1>
               <div className="puja-btn">
-                <CustomButton text="Book Now" />
+                <CustomButton onClick={() => whatsappData()} text="Book Now" />
               </div>
             </div>
 
