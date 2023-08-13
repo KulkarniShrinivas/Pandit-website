@@ -1,10 +1,10 @@
-import "./popular-services.scss";
-import ServiceCard from "./service-card/service-card";
-import { btnText, servicesData } from "../../data/all-services-data";
-import ServicesButton from "./services-button";
+import "./all-services.scss";
+import ServiceCard from "../../components/all-services/service-card/service-card";
 import { useEffect, useState } from "react";
+import { btnText, servicesData } from "../../data/all-services-data";
+import ServicesButton from "../../components/all-services/services-button";
 
-const allPujaServices = () => {
+const AllPujaServices = () => {
   const [category, setCategory] = useState(1);
   const [allData, setData] = useState(null);
 
@@ -43,4 +43,4 @@ const allPujaServices = () => {
   );
 };
 
-export default allPujaServices;
+export default AllPujaServices;

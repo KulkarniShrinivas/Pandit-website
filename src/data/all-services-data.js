@@ -16,26 +16,31 @@ export const servicesData = [
   {
     title: "Ganesh Puja",
     category: 1,
+    id: 1,
     src: GaneshImage,
   },
   {
     title: "Marriage Puja",
     category: 1,
+    id: 2,
     src: Marriage,
   },
   {
     title: "Udaka Shanti ",
     category: 3,
+    id: 3,
     src: udakshanti,
   },
   {
     title: "GrihaPravesh Puja.",
     category: 1,
+    id: 4,
     src: grihapravesh,
   },
   {
     title: "Satyanarayan Puja",
     category: 2,
+    id: 5,
     src: Satyanarayan,
   },
   {

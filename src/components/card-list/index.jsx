@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import Card from "./card/index";
 import CustomButton from "../custom-button";
-import { cardListData } from "../../data/cardListData";
+import { servicesData } from "../../data/all-services-data";
 import { useNavigate } from "react-router-dom";
 
 const CardList = () => {
@@ -32,13 +32,16 @@ const CardList = () => {
           onClick={() => navigate("/allpujas")}
         />
         <div ref={cardListRef} className="card-list">
-          {cardListData.map((card, index) => (
-            <Card
-              key={card.poojaTitle + index}
-              poojaTitle={card.poojaTitle}
-              src={card.src}
-            />
-          ))}
+          {servicesData
+            .filter((c) => c.category === 1)
+            .slice(0, 5)
+            .map((card, index) => (
+              <Card
+                key={card.poojaTitle + index}
+                poojaTitle={card.poojaTitle}
+                src={card.src}
+              />
+            ))}
         </div>
       </section>
     </>
