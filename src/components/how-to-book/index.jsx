@@ -19,6 +19,7 @@ import {
   timelineTitle,
 } from "./style";
 import { Icon } from "@mui/material";
+import { howToBookTimeline } from "../../data/how-to-book";
 
 export default function HowToBook() {
   return (
@@ -27,86 +28,25 @@ export default function HowToBook() {
         How <span>MarathiSarvaPooja</span> Works
       </Typography>
       <Timeline position="alternate">
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <Icon sx={timelineIcon}>
-                <img src={select1} alt="select-puja-kalash" />
-              </Icon>
-            </TimelineDot>
-            <TimelineConnector sx={timelineConnectorStyles} />
-          </TimelineSeparator>
-          <TimelineContent sx={timelineContentStyle}>
-            <Typography variant="h6" component="span" sx={timelineTitle}>
-              Select Puja
-            </Typography>
-            <Typography sx={timelinePara}>
-              Pick a puja according to your preference
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector sx={timelineConnectorStyles} />
-            <TimelineDot color="primary">
-              <Icon sx={timelineIcon}>
-                <img src={select2} alt="whatsapp Icon" />
-              </Icon>
-            </TimelineDot>
-            <TimelineConnector sx={timelineConnectorStyles} />
-          </TimelineSeparator>
-          <TimelineContent sx={timelineContentStyle}>
-            <Typography sx={timelineTitle} variant="h6" component="span">
-              Talk on WhatsApp
-            </Typography>
-            <Typography sx={timelinePara}>
-              Talk to us on whatsapp for further details
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector sx={timelineConnectorStyles} />
-            <TimelineDot color="success">
-              <Icon sx={timelineIcon}>
-                <img src={select3} alt="Confirmation Icon" />
-              </Icon>
-            </TimelineDot>
-            <TimelineConnector
-              sx={{ ...timelineConnectorStyles, bgcolor: "secondary.main" }}
-            />
-          </TimelineSeparator>
-          <TimelineContent sx={timelineContentStyle}>
-            <Typography variant="h6" component="span" sx={timelineTitle}>
-              Receive your Confirmation
-            </Typography>
-            <Typography sx={timelinePara}>
-              Get your confirmation for booking
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector
-              sx={{ ...timelineConnectorStyles, bgcolor: "secondary.main" }}
-            />
-            <TimelineDot color="secondary">
-              <Icon sx={timelineIcon}>
-                <img src={select4} alt="bell icon" />
-              </Icon>
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={timelineContentStyle}>
-            <Typography variant="h6" component="span" sx={timelineTitle}>
-              Receive Regular Updates
-            </Typography>
-            <Typography sx={timelinePara}>
-              Receive all the information via email, SMS, and WhatsApp.
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
+        {howToBookTimeline.map((T) => (
+          <TimelineItem key={T.id}>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot color={T.timeline_dot_color}>
+                <Icon sx={timelineIcon}>
+                  <img src={T.img.src} alt={T.img.alt} />
+                </Icon>
+              </TimelineDot>
+              <TimelineConnector sx={timelineConnectorStyles} />
+            </TimelineSeparator>
+            <TimelineContent sx={timelineContentStyle}>
+              <Typography variant="h6" component="span" sx={timelineTitle}>
+                {T.title}
+              </Typography>
+              <Typography sx={timelinePara}>{T.description}</Typography>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
       </Timeline>
     </Box>
   );
