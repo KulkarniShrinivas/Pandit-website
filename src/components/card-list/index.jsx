@@ -29,7 +29,7 @@ const CardList = () => {
         <h2 className="card-list-heading">Recommended Pujas</h2>
         <CustomButton
           text={"See All Puja Services"}
-          onClick={() => navigate("/allpujas")}
+          onClick={() => navigate("/allpujas/1")}
         />
         <div ref={cardListRef} className="card-list">
           {servicesData

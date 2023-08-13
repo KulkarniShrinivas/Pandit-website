@@ -3,16 +3,19 @@ import ServiceCard from "../../components/all-services/service-card/service-card
 import { useEffect, useState } from "react";
 import { btnText, servicesData } from "../../data/all-services-data";
 import ServicesButton from "../../components/all-services/services-button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const AllPujaServices = () => {
-  const [category, setCategory] = useState(1);
   const [allData, setData] = useState(null);
   const navigate = useNavigate();
+  const { id } = useParams();
 
   useEffect(() => {
-    setData(servicesData.filter((service) => service.category === category));
-  }, [category]);
+    console.log(id);
+    setData(
+      servicesData.filter((service) => service.category === parseInt(id))
+    );
+  }, [id]);
 
   return (
     <div className="all-puja-services">
@@ -28,7 +31,7 @@ const AllPujaServices = () => {
           <ServicesButton
             text={btn.text}
             key={btn.text}
-            handleClick={() => setCategory(btn.category)}
+            handleClick={() => navigate("/allpujas/" + btn.category)}
           />
         ))}
       </div>

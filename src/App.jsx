@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/allpujas" element={<AllPujaServices />} />
+          <Route path="/allpujas/:id" element={<AllPujaServices />} />
           <Route path="/puja/:id" element={<PujaPage />} />
           <Route path="/photos" element={<PhotoGallery />} />
           <Route path="/contact" element={<ContactUs />} />
