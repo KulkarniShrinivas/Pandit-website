@@ -8,9 +8,9 @@ const CardTilt = (props) => {
     <Tilt>
       <Box
         sx={{
-          background: `url(${props.img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          background: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(${props.img})
+      center/cover no-repeat`,
         }}
         className="tilt-card"
       >

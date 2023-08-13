@@ -1,8 +1,8 @@
-import ganeshImage from "../../assets/ganesh_small_comp.webp";
-import Satyanarayan from "../../assets/satya.webp";
-import grihapravesh from "../../assets/grihapravesh.webp";
-import Marriage from "../../assets/marriage.webp";
-import udakshanti from "../../assets/udakshanti.webp";
+import ganeshImage from "../assets/ganesh_small_comp.webp";
+import Satyanarayan from "../assets/satya.webp";
+import grihapravesh from "../assets/grihapravesh.webp";
+import Marriage from "../assets/marriage.webp";
+import udakshanti from "../assets/udakshanti.webp";
 
 export const cardListData = [
   {

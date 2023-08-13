@@ -9,11 +9,11 @@ const CustomButton = ({
     <>
       {isContained ? (
         <button className="contained" onClick={onClick}>
-          <span>{text}</span>
+          <span className="btn-span">{text}</span>
         </button>
       ) : (
         <button className="outlined" onClick={onClick}>
-          <span>{text}</span>
+          <span className="btn-span">{text}</span>
         </button>
       )}
     </>

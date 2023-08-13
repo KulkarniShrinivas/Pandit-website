@@ -10,7 +10,7 @@
   border: 2px solid var(--primary-color);
 }
 
-span {
+.btn-span {
   display: inline-block;
   transform: skew(21deg);
 }
@@ -51,7 +51,7 @@ span {
   border: 2px solid var(--primary-color);
 }
 
-.outlined span {
+.outlined .btn-span {
   display: inline-block;
   transform: skew(21deg);
 }

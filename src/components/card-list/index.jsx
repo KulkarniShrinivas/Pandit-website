@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import Card from "./card/index";
 import CustomButton from "../custom-button";
-import { cardListData } from "./cardListData";
+import { cardListData } from "../../data/cardListData";
 import { useNavigate } from "react-router-dom";
 
 const CardList = () => {

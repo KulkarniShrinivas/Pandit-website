@@ -4,7 +4,7 @@ import { Box, useMediaQuery } from "@mui/material";
 import flowersLine from "../../assets/flowers.jpeg";
 import bigFlowerLine from "../../assets/flowers_big.webp";
 import CardTilt from "../card-tilt/cardTilt";
-import { rangeData } from "./rangeServicesData";
+import { rangeData } from "../../data/rangeServicesData";
 
 const RangeOfServices = () => {
   const isMobileScreen = useMediaQuery("(max-width: 800px)");

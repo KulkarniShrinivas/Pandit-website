@@ -1,19 +1,41 @@
-import CustomButton from "../custom-button/index";
 import "./popular-services.scss";
 import ServiceCard from "./service-card/service-card";
-import { servicesData } from "./popular-services-data";
+import { btnText, servicesData } from "../../data/all-services-data";
+import ServicesButton from "./services-button";
+import { useEffect, useState } from "react";
 
-const PopularServices = () => {
+const allPujaServices = () => {
+  const [category, setCategory] = useState(1);
+  const [allData, setData] = useState(null);
+
+  useEffect(() => {
+    setData(servicesData.filter((service) => service.category === category));
+  }, [category]);
+
   return (
-    <div className="popular-services">
-      <h2>Pujas For You</h2>
+    <div className="all-puja-services">
+      <div className="all-puja-services-headers">
+        <h1 className="heading">Puja Services</h1>
+        <p className="para">
+          Explore the complete range of puja services we provide
+        </p>
+      </div>
+
+      <div className="btn-container">
+        {btnText.map((btn) => (
+          <ServicesButton
+            text={btn.text}
+            handleClick={() => setCategory(btn.category)}
+          />
+        ))}
+      </div>
+
       <div className="all-services">
-        {servicesData.map((service) => (
+        {allData?.map((data, index) => (
           <ServiceCard
-            key={service.title}
-            title={service.title}
-            text={service.text}
-            src={service.src}
+            key={data.title + index}
+            text={data.title}
+            src={data.src}
           />
         ))}
       </div>
@@ -21,4 +43,4 @@ const PopularServices = () => {
   );
 };
 
-export default PopularServices;
+export default allPujaServices;

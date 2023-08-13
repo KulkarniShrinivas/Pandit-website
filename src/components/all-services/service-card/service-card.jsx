@@ -1,17 +1,12 @@
-import CustomButton from "../../custom-button";
-import "./service-card.scss";
+import { Box } from "@mui/material";
+import "./styles.js";
+import { serviceCardStyles } from "./styles.js";
 
-const ServiceCard = ({ title, text, src }) => {
+const ServiceCard = ({ text, src }) => {
   return (
-    <div className="service-card">
-      <img src={src} alt="Ganesh Image" />
-      <h3>{title}</h3>
+    <Box sx={serviceCardStyles(src)}>
       <p>{text}</p>
-      <div className="btn-show">
-        <CustomButton text="Book Now" isContained={true} />
-        <CustomButton text="View Now" isContained={false} />
-      </div>
-    </div>
+    </Box>
   );
 };
 

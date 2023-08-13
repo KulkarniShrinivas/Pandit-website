@@ -1,0 +1,71 @@
+.services-btn {
+  border: none;
+  padding: 1rem;
+  width: 15em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  animation: bounceUpDown 2s infinite;
+}
+
+.services-btn:nth-child(1),
+.services-btn:nth-child(3),
+.services-btn:nth-child(5) {
+  margin-left: 2rem;
+}
+
+@keyframes bounceUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+}
+
+.services-btn:hover,
+.services-btn:focus {
+  // background: linear-gradient(0deg, #12373f, #12373f);
+  background-color: white;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.services-btn:hover .text,
+.services-btn:focus .text {
+  color: var(--primary-color);
+}
+
+.services-btn:hover .sparkle,
+.services-btn:focus .sparkle {
+  fill: var(--primary-color-light);
+  transform: scale(1.2);
+}
+
+@media (min-width: 479px) {
+  .services-btn:nth-child(1),
+  .services-btn:nth-child(3),
+  .services-btn:nth-child(5) {
+    margin-left: 0;
+  }
+}
