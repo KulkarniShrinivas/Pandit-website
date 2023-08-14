@@ -1,8 +1,7 @@
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/index";
 import PhotoGallery from "./pages/photo-gallery/index";
-import ContactUs from "./pages/contact-us/index";
+import ContactUs from "./pages/contact-us/contactUs";
 import Astrologer from "./pages/astrologer/index";
 import AllPujaServices from "./pages/all-pujas/all-services";
 import PujaPage from "./pages/puja-page/pujaPage";

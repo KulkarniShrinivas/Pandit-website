@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
 import PhoneIcon from "@mui/icons-material/Phone";
 import "./navbar.scss";
 import { IconButton, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import { navbarData } from "../../data/navbar-data";
 
 const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link to="/">
               <img
                 className="nav-logo"
-                src={logo}
+                src={navbarData.logo}
                 alt="MarathiSarvaPooja Logo"
               />
             </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
             {isDesktopScreen && (
               <div className="phone-container">
                 <PhoneIcon className="phone-icon" />
-                <p>7865432910</p>
+                <p>{navbarData.phoneNo}</p>
               </div>
             )}
           </div>
@@ -40,30 +40,18 @@ const Navbar = () => {
                 : "nav-paths nav-mobile"
             }
           >
-            <li className="nav-list">
-              <Link className="nav-link" to={"/allpujas/1"}>
-                All Puja Services
-              </Link>
-              <div class="line"></div>
-            </li>
-            <li className="nav-list">
-              <Link className="nav-link" to={"/contact"}>
-                Contact Us
-              </Link>
-              <div class="line"></div>
-            </li>
-            <li className="nav-list">
-              <Link className="nav-link" to={"/photos"}>
-                Photos Gallery
-              </Link>
-              <div class="line"></div>
-            </li>
-            <li className="nav-list">
-              <Link className="nav-link" to={"/astro"}>
-                Astrology
-              </Link>
-              <div class="line"></div>
-            </li>
+            {navbarData.navList.map((list) => (
+              <li className="nav-list">
+                <Link
+                  className="nav-link"
+                  to={list.link}
+                  onClick={() => setNavOpen(false)}
+                >
+                  {list.title}
+                </Link>
+                <div class="line"></div>
+              </li>
+            ))}
           </ul>
           {!isDesktopScreen && (
             <IconButton
