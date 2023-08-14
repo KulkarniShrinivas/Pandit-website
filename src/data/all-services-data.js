@@ -1,6 +1,6 @@
 import GaneshImage from "../assets/ganesh_small_comp.webp";
 import Satyanarayan from "../assets/satya.webp";
-import grihapravesh from "../assets/grihapravesh.webp";
+import grihapravesh from "../assets/vastuhome.jpeg";
 import Marriage from "../assets/marriage.webp";
 import udakshanti from "../assets/udakshanti.webp";
 import Durgasaptashati from "../assets/durga_saptashati.webp"
