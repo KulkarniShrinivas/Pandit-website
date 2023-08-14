@@ -3,6 +3,9 @@ import Satyanarayan from "../assets/satya.webp";
 import grihapravesh from "../assets/grihapravesh.webp";
 import Marriage from "../assets/marriage.webp";
 import udakshanti from "../assets/udakshanti.webp";
+import Durgasaptashati from "../assets/durga_saptashati.webp"
+import Newoffice from "../assets/newoffice.webp"
+import Mahalaxmipuja from "../assets/mahalaxmipuja.webp"
 
 export const btnText = [
   { text: "Pujas", category: 1 },
@@ -211,7 +214,7 @@ export const servicesData = [
       ],
     },
     id: 6,
-    src: Marriage,
+    src:  Durgasaptashati,
   },
 
 
@@ -248,7 +251,7 @@ export const servicesData = [
     },
     
     id: 7,
-    src: udakshanti,
+    src: Newoffice,
   },
 
 
@@ -326,7 +329,7 @@ export const servicesData = [
       ],
     },
     id: 9,
-    src: Satyanarayan,
+    src: Mahalaxmipuja,
   },
 
 
