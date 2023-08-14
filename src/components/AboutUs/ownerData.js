@@ -1,13 +1,13 @@
 const ownerData = {
-  yearsOfExperience: "12+",
+  yearsOfExperience: "15+",
   subheading: "Years of Experience",
-  yearDescription: "in South Kashi’s famous Gokarna mahabaleshwaram",
+  yearDescription: "in South Kashi’s famous Gokarna mahabaleshwaram and Bangalore",
 
-  happyClients: "1K+",
+  happyClients: "11K+",
   clientsubheading: "Pujas Performed",
   clientDescription: "in different states of India",
 
-  knowledgeCount: "500+",
+  knowledgeCount: "1k+",
   knowledgeHeading: "Pujas & Havan knowledge",
   knowledgeDescription: "like Rigveda yaga, Ganapathi homa etc.",
 
