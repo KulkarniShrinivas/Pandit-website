@@ -1,6 +1,6 @@
 import pujahome from "../assets/range_of_services/pujahome.jpeg";
 import tiltCard2Img from "../assets/range_of_services/card_tilt_2.jpg";
-import tiltCard3Img from "../assets/range_of_services/card_tilt_3.webp";
+import Vastuhoma from "../assets/range_of_services/vastuhome.jpeg";
 import tiltCard4Img from "../assets/range_of_services/card_tilt_4.jpg";
 
 export const rangeData = [
@@ -14,7 +14,7 @@ export const rangeData = [
   },
   {
     title: "Havana",
-    img: tiltCard3Img,
+    img: Vastuhoma,
   },
   {
     title: "Astrology",
