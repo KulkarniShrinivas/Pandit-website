@@ -7,15 +7,11 @@ const ContactForm = () => {
       <form>
         <div className="user-box">
           <input required="" name="" type="text" />
-          <label>Name</label>
+          <label>Email</label>
         </div>
         <div className="user-box">
           <input required="" name="" type="password" />
-          <label>Phone number</label>
-        </div>
-        <div className="user-box">
-          <input required="" name="" type="text" />
-          <label>Query regarding?</label>
+          <label>Password</label>
         </div>
         <a href="#">
           <span></span>
@@ -26,9 +22,9 @@ const ContactForm = () => {
         </a>
       </form>
       <p>
-        Don't want to fill form?{" "}
-        <a href="" className="a2"> Directly
-        contact/whatsapp 7899148582!
+        Don't have an account?{" "}
+        <a href="" className="a2">
+          Sign up!
         </a>
       </p>
     </div>
