@@ -28,7 +28,7 @@ const ContactForm = () => {
       <p>
         Don't want to fill form?{" "}
         <a href="" className="a2"> Directly
-        contact/whatsapp! 7899148582
+        contact/whatsapp 7899148582!
         </a>
       </p>
     </div>
