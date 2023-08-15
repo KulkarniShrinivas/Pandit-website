@@ -16,12 +16,16 @@ const ContactForm = () => {
       <p>Enquiry Form</p>
       <form id="enquiry-form" onSubmit={handleSubmit}>
         <div className="user-box">
-          <input id="name" required name="name" type="text" />
-          <label for="name">Name *</label>
+          <input required="" name="" type="text" />
+          <label>Name</label>
         </div>
         <div className="user-box">
-          <input id="number" required name="number" type="email" />
-          <label for="number">Mobile Number *</label>
+          <input required="" name="" type="password" />
+          <label>Phone number</label>
+        </div>
+        <div className="user-box">
+          <input required="" name="" type="text" />
+          <label>Query regarding?</label>
         </div>
         <a onClick={handleAnchorClick}>
           <span></span>

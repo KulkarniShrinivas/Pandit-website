@@ -6,6 +6,12 @@ import udakshanti from "../assets/udakshanti.webp";
 import Durgasaptashati from "../assets/durga_saptashati.webp"
 import Newoffice from "../assets/newoffice.webp"
 import Mahalaxmipuja from "../assets/mahalaxmipuja.webp"
+import Rudrabhishek from "../assets/rudrabhishek.jpeg"
+import Durgadeepa from "../assets/durgadeepa.jpg"
+import Navratri from "../assets/navratri.webp"
+import Newvehicle from "../assets/vahanpuja.webp"
+import Boomi from "../assets/bhumipuja.webp"
+
 
 export const btnText = [
   { text: "Pujas", category: 1 },
@@ -290,7 +296,7 @@ export const servicesData = [
       ],
     },
     id: 8,
-    src: grihapravesh,
+    src: Rudrabhishek,
   },
 
 
@@ -399,7 +405,7 @@ export const servicesData = [
       ],
     },
     id: 11,
-    src: Marriage,
+    src: Durgadeepa ,
     
   },
 
@@ -464,7 +470,7 @@ export const servicesData = [
       ],
     },
     id: 13,
-    src: grihapravesh,
+    src: Navratri,
 
 },
 
@@ -495,7 +501,7 @@ export const servicesData = [
       ],
     },
     id: 14,
-    src: Satyanarayan,
+    src: Newvehicle,
 },
 
 {
@@ -528,7 +534,7 @@ export const servicesData = [
       ],
     },
     id: 15,
-    src: GaneshImage,
+    src: Boomi,
 },
 
 
