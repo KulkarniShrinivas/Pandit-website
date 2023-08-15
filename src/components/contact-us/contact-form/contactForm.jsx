@@ -1,10 +1,20 @@
 import "./contactForm.scss";
 
 const ContactForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+  };
+
+  const handleAnchorClick = () => {
+    const form = document.getElementById("enquiry-form");
+    form.submit();
+  };
+
   return (
     <div className="login-box">
-      <p>Login</p>
-      <form>
+      <p>Enquiry Form</p>
+      <form id="enquiry-form" onSubmit={handleSubmit}>
         <div className="user-box">
           <input required="" name="" type="text" />
           <label>Name</label>
@@ -17,7 +27,7 @@ const ContactForm = () => {
           <input required="" name="" type="text" />
           <label>Query regarding?</label>
         </div>
-        <a href="#">
+        <a onClick={handleAnchorClick}>
           <span></span>
           <span></span>
           <span></span>
@@ -26,9 +36,9 @@ const ContactForm = () => {
         </a>
       </form>
       <p>
-        Don't want to fill form?{" "}
-        <a href="" className="a2"> Directly
-        contact/whatsapp! 7899148582
+        Don't have an account?{" "}
+        <a href="" className="a2">
+          Sign up!
         </a>
       </p>
     </div>

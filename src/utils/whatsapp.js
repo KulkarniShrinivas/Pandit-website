@@ -1,8 +1,7 @@
 export const whatsappData = () => {
-  const phoneNumber = "7899148582"; // Replace with the phone number
-  const message = "Hello, this is a test message."; // Optional message
+  var phoneNumber = "7899148582"; // Replace with the phone number
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
+  var whatsappUrl = "https://api.whatsapp.com/send?phone=" + phoneNumber;
 
   window.location.href = whatsappUrl;
 };

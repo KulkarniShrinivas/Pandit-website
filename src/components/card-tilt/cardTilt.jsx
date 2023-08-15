@@ -2,6 +2,7 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import "./cardTilt.scss";
 import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CardTilt = (props) => {
   return (
@@ -15,9 +16,9 @@ const CardTilt = (props) => {
         className="tilt-card"
       >
         <h3 className="card-tilt-heading">
-          <a className="card-tilt-tag" href="#">
+          <Link className="card-tilt-tag" to={props.link}>
             {props.title}
-          </a>
+          </Link>
         </h3>
       </Box>
     </Tilt>

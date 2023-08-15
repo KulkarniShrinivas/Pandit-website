@@ -26,7 +26,12 @@ const RangeOfServices = () => {
       </div>
       <div className="services-list">
         {rangeData.map((r, index) => (
-          <CardTilt key={r.title + index} img={r.img} title={r.title} />
+          <CardTilt
+            link={r.link}
+            key={r.title + index}
+            img={r.img}
+            title={r.title}
+          />
         ))}
       </div>
     </Box>

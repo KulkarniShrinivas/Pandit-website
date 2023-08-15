@@ -1,7 +1,7 @@
-import React from "react";
+import ComingSoon from "../../components/coming-soon/comingSoon";
 
 const PhotoGallery = () => {
-  return <div>PhotoGallery</div>;
+  return <ComingSoon />;
 };
 
 export default PhotoGallery;
