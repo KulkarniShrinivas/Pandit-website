@@ -1607,6 +1607,38 @@ src: udakshanti,
       
       },
          
+
+      
+      {
+        title: "Pitru paksha shradha",
+        category: 5,
+        description: [
+          "  Pitru Paksha Shradha is a reverential ceremony held to honour our ancestors on the specific Tithi of their passing. Sarva Pitru Shradha, a comprehensive homage to all departed ancestors, is conducted on the concluding day of Pitru Paksha, known as Mahalaya Amavasya ",
+          "In the Narayana Bali homa, departed souls with unfulfilled desires are invoked into a symbolic body made of wheat flour. The ritual then acts as a liberating rite, guiding them to another realm. Chanting of Vishnu Sahasranam plays a pivotal role in this process.",
+      
+        ],
         
+        benefits: {
+          title: "Benefits of Pitru paksha shradha",
+          points: [
+            {
+              title: "Ancestral Blessings and Protection",
+              description: "Performing the rituals with devotion and sincerity is believed to invoke the blessings of departed ancestors. It is thought that when their souls are at peace and content, they can bless their descendants with protection, guidance, and overall well-being.",
+            },
+            {
+              title: " Spiritual Connection: ",
+              description: " The Pitru Paksha Shradha ceremony fosters a strong sense of spiritual connection with one's roots. It's an opportunity to remember and honor one's ancestors, fostering a sense of continuity between generations and recognizing the debt of gratitude owed to those who came before.",
+            },
+            {
+              title: "Purification and Liberation: ",
+              description: "Engaging in these rituals is considered a way to purify oneself and seek liberation for the ancestors' souls. It's believed that by offering the pindas and performing the tarpana, any negative karma associated with the ancestors might be mitigated, allowing them to progress towards higher realms and eventual liberation (moksha). ",
+            }
+          ],
+        },
+        id: 46,
+        src: udakshanti,
+        
+        },
+           
 
 ];
