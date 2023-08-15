@@ -64,7 +64,7 @@ const ContactUs = () => {
             />
           </Box>
         </Box>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </Box>
     </Box>
   );

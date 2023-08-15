@@ -2,12 +2,13 @@ import "./socialMedia.scss";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { whatsappData } from "../../../utils/whatsapp";
 
 const SocialMedia = ({ whatsapp, fb, insta }) => {
   return (
     <div className="social-buttons">
       <a
-        href={whatsapp}
+        onClick={() => whatsappData()}
         target="_blank"
         rel="noopener noreferrer"
         className="social-button github"

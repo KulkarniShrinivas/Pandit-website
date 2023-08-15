@@ -6,6 +6,7 @@ import Astrologer from "./pages/astrologer/index";
 import AllPujaServices from "./pages/all-pujas/all-services";
 import PujaPage from "./pages/puja-page/pujaPage";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/astro" element={<Astrologer />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

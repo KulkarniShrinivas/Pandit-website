@@ -1,19 +1,29 @@
 import "./contactForm.scss";
 
 const ContactForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+  };
+
+  const handleAnchorClick = () => {
+    const form = document.getElementById("enquiry-form");
+    form.submit();
+  };
+
   return (
     <div className="login-box">
-      <p>Login</p>
-      <form>
+      <p>Enquiry Form</p>
+      <form id="enquiry-form" onSubmit={handleSubmit}>
         <div className="user-box">
-          <input required="" name="" type="text" />
-          <label>Email</label>
+          <input id="name" required name="name" type="text" />
+          <label for="name">Name *</label>
         </div>
         <div className="user-box">
-          <input required="" name="" type="password" />
-          <label>Password</label>
+          <input id="number" required name="number" type="email" />
+          <label for="number">Mobile Number *</label>
         </div>
-        <a href="#">
+        <a onClick={handleAnchorClick}>
           <span></span>
           <span></span>
           <span></span>
