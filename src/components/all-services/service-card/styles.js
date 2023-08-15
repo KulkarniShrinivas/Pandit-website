@@ -14,7 +14,6 @@ export const serviceCardStyles = (src) => ({
   userSelect: "none",
   fontWeight: "bolder",
   color: "white",
-  fontSize: "1.25rem",
   border: "1px solid black",
   transform: "scale(0.95)",
   transition: "transform 0.5s",
@@ -24,33 +23,37 @@ export const serviceCardStyles = (src) => ({
   },
 
   "& .img": {
-    objectFit: "cover",
     width: "100%",
-    height: "70%",
+    height: "80%",
     borderRadius: "17px 17px 0 0",
     background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${src})
       center/cover no-repeat`,
+    backgroundPosition: "top",
   },
 
   "& .text": {
-    backgroundColor: "white",
     width: "100%",
     borderRadius: "0 0 17px 17px",
     padding: "0 1rem",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "30%",
+    height: "20%",
     zIndex: "100",
 
     "& h3": {
       color: "var(--primary-color)",
+      fontSize: "1.1rem",
     },
   },
 
   "@media (min-width: 700px)": {
     width: "380px",
     height: "380px",
+
+    "& .text h3": {
+      fontSize: "1.25rem",
+    },
   },
 });

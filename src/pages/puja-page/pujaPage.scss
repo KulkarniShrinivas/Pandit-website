@@ -1,7 +1,8 @@
 .puja-details-card {
   display: flex;
   grid-template-columns: 1fr;
-  margin: 2rem 1.5rem;
+  margin: 2rem 0;
+  padding: 0 1em;
   flex-direction: column;
   align-items: center;
   margin-top: 70px;
@@ -9,10 +10,10 @@
   max-width: 1500px;
   width: 100%;
   align-self: center;
+  background-color: #faf9f6;
 
   .puja-image {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 300px;
     width: 100%;
   }
 
@@ -49,7 +50,6 @@
       }
 
       .puja-benefits-container {
-        background-color: rgba($color: #000000, $alpha: 0.1);
         padding: 1rem;
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.1);
         border-radius: 0 0 5px 5px;
@@ -60,11 +60,18 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .puja-details-card {
     flex-direction: row;
     gap: 2rem;
     align-items: flex-start;
+    margin: 2rem 0;
+    margin-top: 70px;
+
+    .puja-image {
+      max-width: 400px;
+      height: 400px;
+    }
 
     .puja-text-container {
       .puja-header {

@@ -26,11 +26,16 @@ const PujaPage = () => {
               <Box
                 sx={{
                   borderRadius: "10px",
-                  maxWidth: "400px",
-                  width: "100%",
-                  height: "400px",
+                  width: "300px",
+                  height: "300px",
                   backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(${pujaData?.src})`,
                   backgroundBlendMode: "multiply",
+                  backgroundPostion: "top",
+
+                  "@media(min-width:1000px)": {
+                    height: "400px",
+                    width: "400px",
+                  },
                 }}
               ></Box>
             </Tilt>
