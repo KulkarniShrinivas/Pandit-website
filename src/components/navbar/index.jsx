@@ -40,8 +40,8 @@ const Navbar = () => {
                 : "nav-paths nav-mobile"
             }
           >
-            {navbarData.navList.map((list) => (
-              <li className="nav-list">
+            {navbarData.navList.map((list, index) => (
+              <li key={list.link + index} className="nav-list">
                 <Link
                   className="nav-link"
                   to={list.link}
