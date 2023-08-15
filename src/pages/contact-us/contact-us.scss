@@ -37,8 +37,9 @@
 
       .email-phone-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 1.5rem;
+        flex-direction: column;
 
         .icon-info-container {
           display: flex;
@@ -75,6 +76,12 @@
   .contact-us-container {
     .main-info-form-container {
       flex-direction: row;
+
+      .contact-info-container {
+        .email-phone-container {
+          flex-direction: row;
+        }
+      }
     }
   }
 }

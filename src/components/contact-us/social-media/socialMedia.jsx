@@ -15,14 +15,14 @@ const SocialMedia = ({ whatsapp, fb, insta }) => {
       >
         <WhatsAppIcon />
       </a>
-      <a
+      {/* <a
         href={fb}
         target="_blank"
         rel="noopener noreferrer"
         className="social-button facebook"
       >
         <FacebookIcon />
-      </a>
+      </a> */}
       <a
         href={insta}
         target="_blank"
