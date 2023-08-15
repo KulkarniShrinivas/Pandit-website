@@ -7,11 +7,17 @@ import AllPujaServices from "./pages/all-pujas/all-services";
 import PujaPage from "./pages/puja-page/pujaPage";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer/footer";
+import { useMediaQuery } from "@mui/material";
+import FixedIcons from "./components/fixed-icons/fixedIcons";
 
 function App() {
+  const isDesktopScreen = useMediaQuery("(min-width: 800px)");
+
   return (
     <div className="app">
       <BrowserRouter>
+        {!isDesktopScreen && <FixedIcons />}
+
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

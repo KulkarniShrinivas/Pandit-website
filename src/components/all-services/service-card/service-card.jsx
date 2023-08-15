@@ -7,7 +7,10 @@ const ServiceCard = ({ text, src, handleClick }) => {
   return (
     <Tilt>
       <Box onClick={handleClick} sx={serviceCardStyles(src)}>
-        <p>{text}</p>
+        <div className="img"></div>
+        <div className="text">
+          <h3>{text}</h3>
+        </div>
       </Box>
     </Tilt>
   );

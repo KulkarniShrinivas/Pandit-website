@@ -1,8 +1,21 @@
+import { useParams } from "react-router-dom";
 import "./services-button.scss";
+import { useEffect, useRef, useState } from "react";
 
-const ServicesButton = ({ text, handleClick }) => {
+const ServicesButton = ({ text, handleClick, category }) => {
+  const btnRef = useRef();
+  const { id } = useParams();
+
+  useEffect(() => {
+    const btn = btnRef.current;
+    console.log(btn, id, category);
+    if (btn && parseInt(id) === category) {
+      btn.focus();
+    }
+  }, [id]);
+
   return (
-    <button onClick={handleClick} className="services-btn">
+    <button ref={btnRef} onClick={handleClick} className="services-btn">
       <svg
         height="20"
         width="20"

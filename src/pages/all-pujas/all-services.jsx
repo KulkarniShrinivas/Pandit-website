@@ -29,6 +29,7 @@ const AllPujaServices = () => {
       <div className="btn-container">
         {btnText.map((btn) => (
           <ServicesButton
+            category={btn.category}
             text={btn.text}
             key={btn.text}
             handleClick={() => navigate("/allpujas/" + btn.category)}
