@@ -4,14 +4,25 @@ import { useEffect, useState } from "react";
 import { btnText, servicesData } from "../../data/all-services-data";
 import ServicesButton from "../../components/all-services/services-button";
 import { useNavigate, useParams } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 const AllPujaServices = () => {
   const [allData, setData] = useState(null);
   const navigate = useNavigate();
   const { id } = useParams();
+  const isDesktopScreen = useMediaQuery("(min-width: 1000px)");
+
+  const handleBtnClick = (category) => {
+    navigate("/allpujas/" + category);
+
+    !isDesktopScreen &&
+      window.scrollTo({
+        top: 400,
+        behavior: "smooth", // Smooth scrolling animation
+      });
+  };
 
   useEffect(() => {
-    console.log(id);
     setData(
       servicesData.filter((service) => service.category === parseInt(id))
     );
@@ -32,7 +43,7 @@ const AllPujaServices = () => {
             category={btn.category}
             text={btn.text}
             key={btn.text}
-            handleClick={() => navigate("/allpujas/" + btn.category)}
+            handleClick={() => handleBtnClick(btn.category)}
           />
         ))}
       </div>

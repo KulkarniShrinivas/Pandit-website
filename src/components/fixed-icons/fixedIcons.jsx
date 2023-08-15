@@ -3,6 +3,7 @@ import "./fixedIcons.scss";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import { contactData } from "../../data/contact-us-data";
+import { whatsappData } from "../../utils/whatsapp";
 
 const FixedIcons = () => {
   return (

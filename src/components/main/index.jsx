@@ -8,6 +8,7 @@ import left from "../../assets/pLeft.webp";
 import right from "../../assets/pRight.webp";
 import Tilt from "react-parallax-tilt";
 import { whatsappData } from "../../utils/whatsapp";
+import BookNowBtn from "../book-now-btn/bookNowBtn";
 
 const Main = () => {
   const el = useRef(null);
@@ -43,7 +44,8 @@ const Main = () => {
         <span ref={el} />
       </div>
       <div className="btn-container">
-        <CustomButton text={"Book Now"} onClick={() => whatsappData()} />
+        <BookNowBtn onClick={() => whatsappData()} />
+        {/* <CustomButton text={"Book Now"} onClick={() => whatsappData()} /> */}
       </div>
       <div className="fade-div"></div>
     </section>
