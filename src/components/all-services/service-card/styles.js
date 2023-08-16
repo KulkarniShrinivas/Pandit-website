@@ -26,7 +26,7 @@ export const serviceCardStyles = (src) => ({
     width: "100%",
     height: "80%",
     borderRadius: "17px 17px 0 0",
-    background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${src})
       center/cover no-repeat`,
     backgroundPosition: "top",
