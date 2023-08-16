@@ -1,10 +1,10 @@
-.btn {
+.bookNowBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 13rem;
   overflow: hidden;
-  height: 4rem;
+  height: 3rem;
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
@@ -12,16 +12,27 @@
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),
-    linear-gradient(
-      137.48deg,
-      #ffdb3b 10%,
-      #fe53bb 45%,
-      #8f51ea 67%,
-      #0044ff 87%
-    );
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
+  
+  &:hover {
+    transform: scale(1.1);
+    #container-stars {
+      z-index: 1;
+      background-color: #212121;
+    }
+  }
+  
+  &:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+    .circleForBookNow {
+      background: #FE53BB;
+    }
+  }
 }
 
 #container-stars {
@@ -35,11 +46,16 @@
   border-radius: 5rem;
 }
 
-strong {
+.strong {
   z-index: 2;
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-family: 'Avalors Personal Use';
+  font-size: 12px;
+>>>>>>> 51368d91678460297e046e832196872e448947ef
   letter-spacing: 5px;
-  color: #ffffff;
+  color: #FFFFFF;
   text-shadow: 0 0 4px white;
 }
 
@@ -49,6 +65,7 @@ strong {
   width: 12rem;
 }
 
+<<<<<<< HEAD
 .circle {
   width: 13rem;
   height: 4rem;
@@ -83,6 +100,22 @@ strong {
 
 .btn:active .circle {
   background: #fe53bb;
+=======
+.circleForBookNow {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+  
+  &:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  &:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+>>>>>>> 51368d91678460297e046e832196872e448947ef
 }
 
 #stars {
@@ -90,6 +123,7 @@ strong {
   background: transparent;
   width: 200rem;
   height: 200rem;
+<<<<<<< HEAD
   z-index: -1;
 }
 
@@ -126,6 +160,33 @@ strong {
   background-size: 50px 50px;
   opacity: 0.5;
   z-index: -1;
+=======
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+>>>>>>> 51368d91678460297e046e832196872e448947ef
 }
 
 @keyframes animStar {
