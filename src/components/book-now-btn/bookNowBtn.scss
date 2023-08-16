@@ -7,7 +7,7 @@
   height: 4rem;
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
-  border-radius: 5rem;
+  border-radius:40px;
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
@@ -31,7 +31,7 @@
   overflow: hidden;
   transition: 0.5s;
   backdrop-filter: blur(1rem);
-  border-radius: 5rem;
+  border-radius: 40px;
 }
 
 strong {
@@ -52,7 +52,7 @@ strong {
 .circle {
   width: 100%;
   height: 30px;
-  filter: blur(2rem);
+  filter: blur(1rem);
   animation: pulse_3011 4s infinite;
   z-index: -1;
 }
