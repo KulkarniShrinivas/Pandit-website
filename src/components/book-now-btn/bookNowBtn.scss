@@ -1,75 +1,30 @@
-.button {
-  height: 50px;
-  width: 180px;
-  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-  border-radius: 25px;
-  animation: animate 1.5s linear infinite;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:active .display {
-    background: rgba(255, 255, 255, 0.5);
-    #msg {
-      -webkit-text-fill-color: #1b1b1b;
-    }
-  }
+button {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
 
   &:hover {
-    transform: scale(1.15) translateY(-15px);
-    animation: animate 0.7s linear infinite;
-  }
-
-  .display, span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .display {
-    z-index: 1;
-    background-color: #1b1b1b;
-    height: 42.5px;
-    width: 172.5px;
-    border-radius: 20px;
-    text-align: center;
-
-    #msg {
-      line-height: 42.5px;
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-  span {
-    height: 100%;
-    width: 100%;
-    background: inherit;
-    border-radius: 25px;
-
-    &:first-child {
-      filter: blur(15px);
-    }
-
-    &:last-child {
-      filter: blur(15px);
-      transition: 0.3s;
-    }
-
-    &:hover:last-child {
-      width: 110%;
-      height: 120%;
-    }
+    transform: translate(5px, -5px);
   }
 }
+button {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
 
-@keyframes animate {
-  100% {
-    filter: hue-rotate(360deg);
+  &:hover {
+    transform: translate(5px, -5px);
   }
 }
