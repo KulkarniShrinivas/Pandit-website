@@ -14,7 +14,6 @@ const PujaPage = () => {
   useEffect(() => {
     const puja_data = servicesData.find((data) => data.id === parseInt(id));
     setPujaData(puja_data);
-    console.log(puja_data, id);
   }, [id]);
 
   return (
