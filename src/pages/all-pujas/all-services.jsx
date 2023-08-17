@@ -23,9 +23,7 @@ const AllPujaServices = () => {
   };
 
   useEffect(() => {
-    setData(
-      servicesData.filter((service) => service.category === parseInt(id))
-    );
+    setData(servicesData.filter((service) => service.category === id));
   }, [id]);
 
   useEffect(() => {
@@ -58,7 +56,7 @@ const AllPujaServices = () => {
             key={data.title + index}
             text={data.title}
             src={data.src}
-            handleClick={() => navigate("/puja/" + data.id)}
+            handleClick={() => navigate("/puja/" + data.title)}
           />
         ))}
       </div>

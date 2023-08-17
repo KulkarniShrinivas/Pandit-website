@@ -24,18 +24,18 @@ const CardList = () => {
         <h2 className="card-list-heading">Recommended Pujas</h2>
         <CustomButton
           text={"See All Puja Services"}
-          onClick={() => navigate("/allpujas/1")}
+          onClick={() => navigate("/allpujas/pujas")}
         />
         <div ref={cardListRef} className="card-list">
           {servicesData
-            .filter((c) => c.category === 1)
+            .filter((c) => c.category === "pujas")
             .slice(0, 5)
             .map((card, index) => (
               <Card
                 key={card.title + index}
                 poojaTitle={card.title}
                 src={card.src}
-                handleViewMoreClick={() => navigate("/puja/" + card.id)}
+                handleViewMoreClick={() => navigate("/puja/" + card.title)}
               />
             ))}
         </div>
