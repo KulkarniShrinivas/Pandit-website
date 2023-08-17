@@ -1,26 +1,34 @@
 import React from "react";
 import "./astrology.scss";
+import { astroData } from "../../data/astro-data";
+import CustomButton from "../../components/custom-button";
+import { whatsappData } from "../../utils/whatsapp";
 
 const Astrologer = () => {
   return (
     <div className="astrology-container">
-      <h1 className="heading">Astrology</h1>
+      <h1 className="heading">
+        Astro<span>logy</span>
+      </h1>
+      <CustomButton text={"Book Now"} onClick={() => whatsappData()} />
       <div>
-        <p>Consult Our Expert Vedic Astrologer</p>
-        <p>
-          Experience Top-notch Vedic Astrology Excellence. Get in Touch with
-          Panditji/Guruji
-        </p>
+        {astroData.heading.map((data) => (
+          <h2>{data}</h2>
+        ))}
       </div>
+
       <section className="about-us astro-about">
         <div className="owner-item item-1">
-          <h3>5k+</h3>
-          <h4>Satisfied with Astrology</h4>
+          <h3>{astroData.astroAbout[0].title}</h3>
+          <h4>{astroData.astroAbout[0].para}</h4>
         </div>
         <div className="owner-item item-2">
-          <h3>5K+</h3>
-          <h4>Horoscope reading</h4>
+          <h3>{astroData.astroAbout[1].title}</h3>
+          <h4>{astroData.astroAbout[1].para}</h4>
         </div>
+      </section>
+      <section className="astrology-para">
+        <p>{astroData.para}</p>
       </section>
     </div>
   );
