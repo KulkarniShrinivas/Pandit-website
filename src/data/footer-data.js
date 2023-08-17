@@ -16,4 +16,10 @@ export const footerData = {
   fb_link: "https://www.fb.com",
   insta_link: "https://www.insta.com",
   whatsapp: "7982103213",
+  main_links: [
+    { title: "Home", link: "/" },
+    { title: "About Us", link: "/about-us" },
+    { title: "Contact Us", link: "/contact" },
+    { title: "Astrology", link: "/astrology" },
+  ],
 };

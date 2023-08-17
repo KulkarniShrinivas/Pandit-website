@@ -8,5 +8,7 @@ export const navbarData = {
     { title: "Contact Us", link: "/contact" },
     { title: "Photo Gallery", link: "/photos/all-photos" },
     { title: "Astrology", link: "/astrology" },
+    { title: "Astrology", link: "/astrology" },
+    { title: "My Journey", link: "/about-us" },
   ],
 };
