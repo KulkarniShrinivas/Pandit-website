@@ -1,7 +1,12 @@
+
+
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom if using it for navigation
 import { contactData } from "../../data/contact-us-data";
 import { footerData } from "../../data/footer-data";
 import SocialMedia from "../contact-us/social-media/socialMedia";
 import "./footer.scss";
+
 
 const Footer = () => {
   return (
@@ -34,7 +39,28 @@ const Footer = () => {
           insta={contactData.socialMedia.insta}
         />
       </div>
+     
+      <div className="main-links">
+        <h3>Main Links</h3>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+          <li>
+            <Link to="/ownerData">About Us</Link>
+          </li>
+         
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/astro">Astrology</Link>
+          </li>
+          
+        </ul>
+      </div>
     </div>
+    
   );
 };
 
