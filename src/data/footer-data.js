@@ -18,8 +18,10 @@ export const footerData = {
   whatsapp: "7982103213",
   main_links: [
     { title: "Home", link: "/" },
-    { title: "About Us", link: "/about-us" },
+    { title: "My Journey", link: "/about-us" },
     { title: "Contact Us", link: "/contact" },
     { title: "Astrology", link: "/astrology" },
+    { title: "Photo Gallery", link: "/photos/all-photos" },
+    { title: "All Puja Services", link: "/allpujas/pujas" },
   ],
 };

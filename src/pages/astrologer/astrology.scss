@@ -4,10 +4,11 @@
   text-align: center;
   color: var(--primary-color);
 
-  h1 {
+  .heading {
     font-size: 3rem;
     color: var(--primary-color);
     font-weight: 900;
+    margin-bottom: 20px;
     span {
       color: var(--secondary-color);
     }
