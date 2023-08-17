@@ -13,7 +13,10 @@ const PujaPage = () => {
   const pujaRef = useRef(null);
 
   useEffect(() => {
-    const puja_data = servicesData.find((data) => data.id === parseInt(id));
+    const puja_data = servicesData.find((data) => {
+      console.log(data.title === id);
+      return data.title === id;
+    });
     setPujaData(puja_data);
   }, [id]);
 

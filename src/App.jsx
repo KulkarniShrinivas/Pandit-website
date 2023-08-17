@@ -23,9 +23,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/allpujas/:id" element={<AllPujaServices />} />
           <Route path="/puja/:id" element={<PujaPage />} />
-          <Route path="/photos" element={<PhotoGallery />} />
+          <Route path="/photos/:id" element={<PhotoGallery />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/astro" element={<Astrologer />} />
+          <Route path="/astrology" element={<Astrologer />} />
         </Routes>
         <Footer />
       </BrowserRouter>

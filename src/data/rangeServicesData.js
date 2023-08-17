@@ -7,21 +7,21 @@ export const rangeData = [
   {
     title: "Puja",
     img: pujahome,
-    link: "/allpujas/1",
+    link: "/allpujas/pujas",
   },
   {
     title: "E-Puja",
     img: tiltCard2Img,
-    link: "/allpujas/1",
+    link: "/allpujas/pujas",
   },
   {
     title: "Havana",
     img: Vastuhoma,
-    link: "/allpujas/2",
+    link: "/allpujas/homa-havan",
   },
   {
     title: "Astrology",
     img: tiltCard4Img,
-    link: "/astro",
+    link: "/astrology",
   },
 ];

@@ -5,42 +5,58 @@ import {
   Grid,
   ImageList,
   ImageListItem,
+  useMediaQuery,
 } from "@mui/material";
 import ComingSoon from "../../components/coming-soon/comingSoon";
-import { photoGalleryData } from "../../data/photo-gallery-data";
+import {
+  btnTextPhoto,
+  photoGalleryData,
+  vipPhotosData,
+} from "../../data/photo-gallery-data";
 import "./photoGallery.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ServicesButton from "../../components/all-services/services-button";
+import { btnClickHandler, handleImgClick, srcset } from "./helper";
+import { useNavigate, useParams } from "react-router-dom";
 
 const PhotoGallery = () => {
+  const [allData, setData] = useState(null);
   const [dialogOpen, setDialogOpen] = useState({
     state: false,
     img: null,
     title: "",
   });
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const isDesktopScreen = useMediaQuery("(min-width: 1000px)");
 
-  const handleImgClick = (src, title) => {
-    console.log("img clicked");
-    setDialogOpen({
-      img: src,
-      state: true,
-      title,
-    });
-  };
-
-  function srcset(image, size, rows = 1, cols = 1) {
-    return {
-      src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-      srcSet: `${image}?w=${size * cols}&h=${
-        size * rows
-      }&fit=crop&auto=format&dpr=2 2x`,
-    };
-  }
+  useEffect(() => {
+    if (id === "vip-photos") {
+      setData(vipPhotosData);
+    } else {
+      setData(photoGalleryData);
+    }
+  }, [id]);
 
   return (
     <main className="Photo-Gallery">
       <h1 className="heading">
         Photo <span>Gallery</span>
       </h1>
+
+      <div className="btn-container">
+        {btnTextPhoto.map((btn) => (
+          <ServicesButton
+            category={btn.category}
+            text={btn.text}
+            key={btn.text}
+            handleClick={() =>
+              btnClickHandler(navigate, isDesktopScreen, btn.category)
+            }
+          />
+        ))}
+      </div>
+
       <ImageList
         sx={{
           maxWidth: 1200,
@@ -52,7 +68,7 @@ const PhotoGallery = () => {
         cols={4}
         rowHeight={121}
       >
-        {photoGalleryData.map((item) => (
+        {allData?.map((item) => (
           <ImageListItem
             key={item.img}
             cols={item.cols || 1}
@@ -62,7 +78,9 @@ const PhotoGallery = () => {
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
-              onClick={() => handleImgClick(item.img, item.title)}
+              onClick={() =>
+                handleImgClick(item.img, item.title, setDialogOpen)
+              }
             />
           </ImageListItem>
         ))}

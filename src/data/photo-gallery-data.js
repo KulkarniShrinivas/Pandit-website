@@ -15,6 +15,17 @@ import img15 from "../assets/gallery/img15.jpg";
 import img16 from "../assets/gallery/img16.jpg";
 import img17 from "../assets/gallery/img17.jpg";
 
+export const btnTextPhoto = [
+  { text: "VIP Photos", category: "vip-photos" },
+  { text: "All Photos", category: "all-photos" },
+];
+
+export const vipPhotosData = [
+  { img: img15, title: "", rows: 2, cols: 2 },
+  { img: img16, title: "", rows: 2, cols: 1 },
+  { img: img17, title: "", rows: 2, cols: 1 },
+];
+
 export const photoGalleryData = [
   { img: img1, title: "", rows: 2, cols: 2 },
   { img: img2, title: "", rows: 1, cols: 1 },

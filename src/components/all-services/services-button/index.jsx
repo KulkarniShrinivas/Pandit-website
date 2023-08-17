@@ -9,7 +9,7 @@ const ServicesButton = ({ text, handleClick, category }) => {
   useEffect(() => {
     const btn = btnRef.current;
     console.log(btn, id, category);
-    if (btn && parseInt(id) === category) {
+    if (btn && id === category) {
       btn.focus();
     }
   }, [id]);
