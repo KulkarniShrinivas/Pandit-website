@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import "./pujaPage.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { servicesData } from "../../data/all-services-data";
 import CustomButton from "../../components/custom-button";
 import { Box } from "@mui/material";
@@ -10,16 +10,28 @@ import { whatsappData } from "../../utils/whatsapp";
 const PujaPage = () => {
   const [pujaData, setPujaData] = useState(null);
   const { id } = useParams();
+  const pujaRef = useRef(null);
 
   useEffect(() => {
     const puja_data = servicesData.find((data) => data.id === parseInt(id));
     setPujaData(puja_data);
   }, [id]);
 
+  useEffect(() => {
+    if (pujaRef.current) {
+      console.log(pujaRef);
+      pujaRef.current.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth", // This creates a smooth scrolling effect
+      });
+    }
+  }, []);
+
   return (
     <>
       {pujaData && (
-        <main className="puja-details-card">
+        <main ref={pujaRef} className="puja-details-card">
           <div className="puja-image">
             <Tilt>
               <Box

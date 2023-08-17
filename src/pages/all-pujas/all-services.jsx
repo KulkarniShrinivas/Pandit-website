@@ -28,6 +28,10 @@ const AllPujaServices = () => {
     );
   }, [id]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <div className="all-puja-services">
       <div className="all-puja-services-headers">

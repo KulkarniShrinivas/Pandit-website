@@ -1,0 +1,17 @@
+.Photo-Gallery {
+  min-height: 100vh;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  .heading {
+    font-size: 3rem;
+    color: var(--primary-color);
+
+    span {
+      color: var(--secondary-color);
+    }
+  }
+}
