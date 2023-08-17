@@ -1,16 +1,48 @@
-import GaneshImage from "../assets/ganesh_small_comp.webp";
-import Satyanarayan from "../assets/satya.webp";
-import grihapravesh from "../assets/vastuhome.jpeg";
-import Marriage from "../assets/marriage.webp";
+import GaneshImage from "../assets/Ganapatipuja.webp";
+import Satyanarayan from "../assets/satyanarayanpuja.jpg";
+import grihapravesh from "../assets/Grihapravesh.webp";
+import Marriage from "../assets/marriageforpandit.webp";
 import udakshanti from "../assets/udakshanti.webp";
-import Durgasaptashati from "../assets/durga_saptashati.webp";
-import Newoffice from "../assets/newoffice.webp";
-import Mahalaxmipuja from "../assets/mahalaxmipuja.webp";
-import Rudrabhishek from "../assets/rudrabhishek.jpeg";
-import Durgadeepa from "../assets/durgadeepa.jpg";
-import Navratri from "../assets/navratri.webp";
-import Newvehicle from "../assets/vahanpuja.webp";
-import Boomi from "../assets/bhumipuja.webp";
+import Durgasaptashati from "../assets/Durgasaptashatiparayana.webp";
+import Newoffice from "../assets/Newofficepooja.webp";
+import Mahalaxmipuja from "../assets/Mahalaxmipuja.webp";
+import Rudrabhishek from "../assets/Rudrabhishekapuja.jpeg";
+import Durgadeepa from "../assets/durgadeepaa.webp";
+import Navratri from "../assets/marriageforpandit.webp";
+import Newvehicle from "../assets/newvehiclepuja.webp";
+import Boomi from "../assets/bhoomipuja.webp";
+
+
+
+//Homaand havan
+
+import GanaHoma from "../assets/ganahoma.webp";
+import ChandiHavan from "../assets/chandihomahavan.webp";
+import SudarshanHavan from "../assets/sudarshanhavan.webp";
+import NavagrahaHavan from "../assets/Navagrahahavan.webp";
+import MrityunjayaHavan from "../assets/Mahamrityunjayahavan.webp";
+import DurgaHoma from "../assets/durgahoma.webp";
+import LaxmiKuberaHavan  from "../assets/LaxmiKuberaHavan.webp";
+import LakshmiNarayanaHoma from "../assets/Lakshminarayanahoma.webp";
+import PavamanaHoma from "../assets/pavamanahoma.webp";
+import DhanvantariHoma from "../assets/dhanvantarihoma.webp";
+import MoolaNakshatraShanti  from "../assets/moolanakshatrashantiaa.webp";
+import Bhadrakalihoma  from "../assets/bhadrakalihoma.webp";
+import LakshmiNarasimhaHoma from "../assets/Lakshminarasimhahoma.webp";
+import KalaBhairavaHoma from "../assets/Kalabhairavahoma.webp";
+
+
+//Parihara
+
+import KalaSarpaDoshaNivarana from "../assets/Kalasarpadoshanivarana.webp";
+import MangalDoshaNivarana from "../assets/KadaliVivaha.webp";
+import ShatruSamharaHoma from "../assets/Shatrusamharahoma.webp";
+import SwayamvaraParvathiHoma from "../assets/SwayamvaraParvathihoma.webp";
+import ShukraAdityaSandhiShanti from "../assets/ShukraAdityaSandhiShanti.webp";
+import DrishtiDurgaHoma from "../assets/DrishtiDurgaHoma.webp";
+import DhanistaPanchakaShanti  from "../assets/DhanistaPanchakaShanti.webp";
+import KalathraDoshaNivarana from "../assets/KalathraDoshaNivarana.webp";
+import KujaRahuSandhiShanti from "../assets/KujaRahuSandhiShanti.webp"
 
 export const btnText = [
   { text: "Pujas", category: "pujas" },
@@ -576,7 +608,7 @@ export const servicesData = [
       ],
     },
     id: 16,
-    src: Marriage,
+    src: GanaHoma,
   },
 
   {
@@ -611,7 +643,7 @@ export const servicesData = [
       ],
     },
     id: 17,
-    src: udakshanti,
+    src: ChandiHavan,
   },
 
   {
@@ -646,7 +678,7 @@ export const servicesData = [
       ],
     },
     id: 18,
-    src: grihapravesh,
+    src: SudarshanHavan,
   },
 
   {
@@ -677,7 +709,7 @@ export const servicesData = [
       ],
     },
     id: 19,
-    src: Satyanarayan,
+    src: NavagrahaHavan,
   },
 
   {
@@ -712,11 +744,11 @@ export const servicesData = [
       ],
     },
     id: 20,
-    src: Satyanarayan,
+    src: MrityunjayaHavan,
   },
 
   {
-    title: "SDurga Homa",
+    title: "Durga Homa",
     category: "homa-havan",
     description: [
       "Durga Devi, known as the Universal Mother, manifested in a fierce incarnation to vanquish the demon Mahishasura.Her protective aura shields against adversaries and malevolent energies. This homa dispels business-related issues and fosters a content, trouble-free life.",
@@ -743,7 +775,7 @@ export const servicesData = [
       ],
     },
     id: 21,
-    src: udakshanti,
+    src: DurgaHoma,
   },
 
   {
@@ -777,11 +809,11 @@ export const servicesData = [
       ],
     },
     id: 22,
-    src: grihapravesh,
+    src: LaxmiKuberaHavan ,
   },
 
   {
-    title: "Lakshmi Narayana Homai Havan",
+    title: "Lakshmi Narayana Homa",
     category: "homa-havan",
     description: [
       "Lakshmi Narayana Homa is dedicated to Goddess Lakshmi and Lord Narayana. Goddess Lakshmi symbolises wealth, prosperity, wisdom, light, fortune, and fertility. Lord Narayana, also known as Maha Vishnu, stands as the destroyer of evil. He triumphed over the demon Hiranyakasipu to safeguard his devotee Prahlad.",
@@ -807,7 +839,7 @@ export const servicesData = [
       ],
     },
     id: 23,
-    src: udakshanti,
+    src: LakshmiNarayanaHoma,
   },
 
   {
@@ -839,7 +871,7 @@ export const servicesData = [
       ],
     },
     id: 24,
-    src: udakshanti,
+    src: PavamanaHoma,
   },
 
   {
@@ -865,7 +897,7 @@ export const servicesData = [
       ],
     },
     id: 25,
-    src: Marriage,
+    src: DhanvantariHoma,
   },
 
   {
@@ -891,7 +923,7 @@ export const servicesData = [
       ],
     },
     id: 26,
-    src: udakshanti,
+    src: MoolaNakshatraShanti ,
   },
 
   {
@@ -927,7 +959,7 @@ export const servicesData = [
       ],
     },
     id: 27,
-    src: udakshanti,
+    src: Bhadrakalihoma,
   },
 
   {
@@ -961,7 +993,7 @@ export const servicesData = [
       ],
     },
     id: 28,
-    src: udakshanti,
+    src: LakshmiNarasimhaHoma,
   },
 
   {
@@ -997,7 +1029,7 @@ export const servicesData = [
       ],
     },
     id: 29,
-    src: udakshanti,
+    src: KalaBhairavaHoma,
   },
 
   {
@@ -1124,7 +1156,7 @@ export const servicesData = [
       ],
     },
     id: 33,
-    src: Satyanarayan,
+    src: KalaSarpaDoshaNivarana,
   },
 
   {
@@ -1160,7 +1192,7 @@ export const servicesData = [
       ],
     },
     id: 34,
-    src: udakshanti,
+    src: MangalDoshaNivarana,
   },
 
   {
@@ -1201,7 +1233,7 @@ export const servicesData = [
       ],
     },
     id: 35,
-    src: Marriage,
+    src: ShatruSamharaHoma,
   },
 
   {
@@ -1237,7 +1269,7 @@ export const servicesData = [
       ],
     },
     id: 36,
-    src: Satyanarayan,
+    src: SwayamvaraParvathiHoma,
   },
 
   {
@@ -1279,7 +1311,7 @@ export const servicesData = [
       ],
     },
     id: 37,
-    src: udakshanti,
+    src: ShukraAdityaSandhiShanti,
   },
 
   {
@@ -1316,7 +1348,7 @@ export const servicesData = [
       ],
     },
     id: 38,
-    src: udakshanti,
+    src: DrishtiDurgaHoma,
   },
 
   {
@@ -1357,7 +1389,7 @@ export const servicesData = [
       ],
     },
     id: 39,
-    src: udakshanti,
+    src: DhanistaPanchakaShanti,
   },
 
   {
@@ -1394,7 +1426,7 @@ export const servicesData = [
       ],
     },
     id: 40,
-    src: Satyanarayan,
+    src: KalathraDoshaNivarana,
   },
 
   {
@@ -1436,7 +1468,7 @@ export const servicesData = [
       ],
     },
     id: 41,
-    src: udakshanti,
+    src: KujaRahuSandhiShanti,
   },
 
   {
