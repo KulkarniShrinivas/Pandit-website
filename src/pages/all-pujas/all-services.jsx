@@ -1,6 +1,6 @@
 import "./all-services.scss";
 import ServiceCard from "../../components/all-services/service-card/service-card";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { btnText, servicesData } from "../../data/all-services-data";
 import ServicesButton from "../../components/all-services/services-button";
 import { useNavigate, useParams } from "react-router-dom";
@@ -14,7 +14,6 @@ const AllPujaServices = () => {
 
   const handleBtnClick = (category) => {
     navigate("/allpujas/" + category);
-
     !isDesktopScreen &&
       window.scrollTo({
         top: 400,
@@ -22,7 +21,7 @@ const AllPujaServices = () => {
       });
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setData(servicesData.filter((service) => service.category === id));
   }, [id]);
 

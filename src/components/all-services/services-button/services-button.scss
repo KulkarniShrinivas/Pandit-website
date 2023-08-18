@@ -1,15 +1,15 @@
 .services-btn {
   border: none;
-  padding: 1rem;
   width: 15em;
+  padding: 1rem;
   border-radius: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: var(--primary-color);
+  background: #1c1a1c;
   cursor: pointer;
-  animation: bounceUpDown 2s infinite;
+  transition: all 450ms ease-in-out;
 }
 
 .services-btn:nth-child(1),
@@ -41,23 +41,21 @@
 
 .services-btn:hover,
 .services-btn:focus {
-  // background: linear-gradient(0deg, #12373f, #12373f);
-  background-color: white;
+  background: linear-gradient(0deg, #a47cf3, #683fea);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px var(--primary-color);
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 100px 0px #9917ff60;
   transform: translateY(-2px);
 }
 
 .services-btn:hover .text,
 .services-btn:focus .text {
-  color: var(--primary-color);
+  color: white;
 }
 
 .services-btn:hover .sparkle,
 .services-btn:focus .sparkle {
-  fill: var(--primary-color-light);
+  fill: white;
   transform: scale(1.2);
 }
 

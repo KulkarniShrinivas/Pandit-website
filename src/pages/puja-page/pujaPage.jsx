@@ -10,31 +10,16 @@ import { whatsappData } from "../../utils/whatsapp";
 const PujaPage = () => {
   const [pujaData, setPujaData] = useState(null);
   const { id } = useParams();
-  const pujaRef = useRef(null);
 
   useEffect(() => {
-    const puja_data = servicesData.find((data) => {
-      console.log(data.title === id);
-      return data.title === id;
-    });
+    const puja_data = servicesData.find((data) => data.title === id);
+    window.scrollTo({ top: 0 });
     setPujaData(puja_data);
   }, [id]);
-
-  useEffect(() => {
-    if (pujaRef.current) {
-      console.log(pujaRef);
-      pujaRef.current.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth", // This creates a smooth scrolling effect
-      });
-    }
-  }, []);
-
   return (
     <>
       {pujaData && (
-        <main ref={pujaRef} className="puja-details-card">
+        <main className="puja-details-card">
           <div className="puja-image">
             <Tilt>
               <Box
@@ -44,6 +29,7 @@ const PujaPage = () => {
                   height: "300px",
                   backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(${pujaData?.src})`,
                   backgroundBlendMode: "multiply",
+                  backgroundSize: "cover",
                   backgroundPostion: "top",
 
                   "@media(min-width:1000px)": {
