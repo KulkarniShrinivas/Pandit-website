@@ -27,7 +27,7 @@ function App() {
           <Route path="/photos/:id" element={<PhotoGallery />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/astrology" element={<Astrologer />} />
-          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,29 @@
+.about-us-main {
+  display: flex;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+  height: 100%;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  background-color: var(--primary-color-dark);
+
+  .about-us-main-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+
+    img {
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+}
