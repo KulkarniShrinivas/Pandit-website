@@ -8,7 +8,7 @@ import Newoffice from "../assets/Newofficepooja.webp";
 import Mahalaxmipuja from "../assets/Mahalaxmipuja.webp";
 import Rudrabhishek from "../assets/Rudrabhishekapuja.jpeg";
 import Durgadeepa from "../assets/durgadeepaa.webp";
-import Navratri from "../assets/marriageforpandit.webp";
+import Navratri from "../assets/NavratriPuja.webp";
 import Newvehicle from "../assets/newvehiclepuja.webp";
 import Boomi from "../assets/bhoomipuja.webp";
 import Namakarana from "../assets/NamakaranaPuja.webp";
