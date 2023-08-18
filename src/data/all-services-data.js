@@ -8,7 +8,7 @@ import Newoffice from "../assets/Newofficepooja.webp";
 import Mahalaxmipuja from "../assets/Mahalaxmipuja.webp";
 import Rudrabhishek from "../assets/Rudrabhishekapuja.jpeg";
 import Durgadeepa from "../assets/durgadeepaa.webp";
-import Navratri from "../assets/NavratriPujann.webp";
+import Navratri from "../assets/NavratriPuja.webp";
 import Newvehicle from "../assets/newvehiclepuja.webp";
 import Boomi from "../assets/bhoomipuja.webp";
 import Namakarana from "../assets/NamakaranaPuja.webp";
@@ -51,7 +51,7 @@ import DhanistaPanchakaShanti  from "../assets/DhanistaPanchakaShanti.webp";
 import KalathraDoshaNivarana from "../assets/KalathraDoshaNivarana.webp";
 import KujaRahuSandhiShanti from "../assets/KujaRahuSandhiShanti.webp"
 import KumbhaVivaha  from "../assets/KumbhaVivaha.webp";
-import RahuBrihaspatiSandhiShanti from "../assets/RahuBrihaspatiSandhiShanti.webp"
+import JananaNakshatraShanti from "../assets/JananaNakshatraShanti.webp"
 import SantanaGopalaHoma from "../assets/SantanaGopalaHoma.webp";
 
 
@@ -1525,40 +1525,41 @@ export const servicesData = [
   },
 
   {
-    title: "Rahu Brihaspati Sandhi Shanti",
+    title: "Janana Nakshatra Shanti",
     category: "Parihara",
     description: [
-      "Rahu Brihaspati Sandhi Shanti: Rahu Brihaspati Sandhi Shanti is a profound ritual aimed at mitigating the adverse effects that may arise during the transition between the Rahu and Guru Dasha periods. As the Rahu Dasha concludes and the Guru Dasha commences, individuals may encounter a slew of challenges and problems in their lives. In certain instances, these challenges can escalate to a point where they pose a risk to an individual's well-being, particularly if their planetary positions are weak.",
-      "The Rahu Brihaspati Sandhi Shanti ritual involves a meticulously crafted procedure designed to counteract the potential negative consequences of this Dasha transition. The sequence begins with Ganapathi pooja, Punyahavachanam, and Kalasa Pooja. Subsequently, the avahanam phase ensues, during which Japas (recitations) of the Rahu and Guru grahas are conducted. Following these recitations, the ritual culminates in the performance of Dasamsa homa for each graha, accompanied by the sacred Navagraha Homa.",
+      "Within the vast cosmos of Vedic astrology, there exist 27 Nakshatras, celestial segments that influence the course of our lives. The moment of birth, guided by these Nakshatras, combines with the Zodiac signs to define one's unique attributes. Each Nakshatra is further divided into four Padas, intricate divisions that shape an individual's destiny.",
+      "However, these celestial influences can manifest both positively and negatively, impacting not only the newborn but also their immediate family members, such as the parents and maternal relatives. In cases where birth occurs during the inauspicious periods of Durmuhurtham or Varjyam, the potential for negativity intensifies.",
+      "Janana Nakshatra Shanti Homa offers a divine solution to counterbalance these influences and alleviate potential adversities. By invoking the energies of the Nakshatras and aligning them harmoniously, the Homa aims to nullify any Doshas or negative effects. The ritual serves as a shield, protecting the newborn and their loved ones from malevolent influences.",
     ],
 
     benefits: {
-      title: "Benefits of Rahu Brihaspati Sandhi Shanti",
+      title: "Benefits of Janana Nakshatra Shanti",
       points: [
         {
-          title: " ",
+          title: "Dosha Removal: ",
           description:
-            " This ritual significantly diminishes the unfavourable impacts that can arise during a Mahadasha transition.",
+            " The Nakshatra homam serves as a potent antidote against malefic influences, dispelling any Doshas that might have arisen due to the alignment of Nakshatras.",
         },
         {
-          title: " ",
+          title: "Positive Transformation:  ",
           description:
-            " The Sandhi Shanti ritual serves to fortify the influence and strength of the Guru graha within an individual's horoscope.",
+            " The homam channels the positive attributes of the Nakshatras, infusing the individual's life with their beneficial traits. This transformation leads to an enhanced quality of life and a more auspicious journey ahead.",
         },
         {
-          title: " ",
+          title: "Holistic Protection: ",
           description:
-            "By effectively addressing any potential health-related challenges, this ritual contributes to overall well-being.",
+            "he impact of Nakshatra influences extends beyond the newborn, encompassing parents and maternal relatives as well. The Janana Nakshatra Shanti Homa provides a safeguard against potential harm, ensuring the well-being of the entire family.",
         },
         {
           title: "",
           description:
-            "Embracing the Rahu Brihaspati Sandhi Shanti ritual empowers individuals to navigate the intricate dynamics of planetary transitions with resilience and grace, ensuring a smoother journey through these pivotal periods of their lives.",
+            "Incorporating the Janana Nakshatra Shanti Homa into your life's auspicious moments not only ensures protection but also enhances the positive potential of these celestial energies. This sacred ritual serves as a profound bridge between the cosmic influences and the individual's earthly journey, harmonizing the two for a life filled with positivity and prosperity.",
         },
       ],
     },
     id: 43,
-    src: RahuBrihaspatiSandhiShanti,
+    src: JananaNakshatraShanti,
   },
 
   {
