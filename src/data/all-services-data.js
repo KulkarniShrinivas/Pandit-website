@@ -11,8 +11,14 @@ import Durgadeepa from "../assets/durgadeepaa.webp";
 import Navratri from "../assets/marriageforpandit.webp";
 import Newvehicle from "../assets/newvehiclepuja.webp";
 import Boomi from "../assets/bhoomipuja.webp";
+import Namakarana from "../assets/NamakaranaPuja.webp";
 
 
+//Festival pujas
+
+import GanapathiSthapana from "../assets/GanapathiSthapana.webp";
+import DiwaliLakshmiPuja from "../assets/DiwaliLakshmiPuja.webp";
+import NavratriPuja from "../assets/NavratriPuja.webp";
 
 //Homaand havan
 
@@ -43,6 +49,13 @@ import DrishtiDurgaHoma from "../assets/DrishtiDurgaHoma.webp";
 import DhanistaPanchakaShanti  from "../assets/DhanistaPanchakaShanti.webp";
 import KalathraDoshaNivarana from "../assets/KalathraDoshaNivarana.webp";
 import KujaRahuSandhiShanti from "../assets/KujaRahuSandhiShanti.webp"
+import KumbhaVivaha  from "../assets/KumbhaVivaha.webp";
+import RahuBrihaspatiSandhiShanti from "../assets/RahuBrihaspatiSandhiShanti.webp"
+import SantanaGopalaHoma from "../assets/SantanaGopalaHoma.webp";
+
+
+
+
 
 export const btnText = [
   { text: "Pujas", category: "pujas" },
@@ -441,40 +454,36 @@ export const servicesData = [
   },
 
   {
-    title: " Lakshmi Puja",
+    title: " Namakarana",
     category: "pujas",
     description: [
-      "Goddess Lakshmi generously bestows blessings upon those who wholeheartedly perform the pooja with sincere devotion. Revered as the deity of wealth, light, prosperity, wisdom, fortune, and fertility, she stands as the consort of Lord Vishnu, guiding individuals toward financial stability. Lakshmi Pooja is a means to seek the benevolence of Goddess Lakshmi.",
-      "The ritual encompasses invoking Goddess Lakshmi, followed by the recitation of mantras, and then conducting the pooja in accordance with the Shastras.",
-      "This sacred pooja is conducted during festive occasions like Diwali and Dhanteras.Fridays are opportune days to perform this revered pooja.",
+      "Namakarana, the ceremonial naming ritual for newborns, holds significant cultural importance. It derives from two words: Nama, signifying 'name,' and Karanam, denoting 'creation' or 'making.' This ceremony, conducted following the initial ten days of the postnatal period, involves choosing a name through astrological or traditional methods.",
+      "This practice is undertaken after the initial impure period to ensure the name is selected auspiciously. The selected name adheres to criteria such as syllable count, ease of pronunciation, pleasant phonetics, gender indication, and conveying qualities like fame, wealth, or power.",
+      "During the Namakarana ceremony, the chosen name is whispered into the right ear of the baby, accompanied by the recitation of specific mantras that invoke blessings and well-being. These invocations ensure the child's protection and harmony.",
     ],
     benefits: {
-      title: "Benefits of Lakshmi Puja:",
+      title: "Benefits of Namakarana Pooja:",
       points: [
         {
-          title: "Elevating Financial Status: ",
+          title: "Official Identification: ",
           description:
-            "Lakshmi pooja aids in attaining a heightened financial standing and nurtures robust self-esteem.",
+            " The ceremony bestows an official name upon the individual, essential for identification and formal purposes.",
         },
         {
-          title: "Overcoming Obstacles: ",
+          title: "Supreme Lord's Blessing: ",
           description:
-            "The pooja effectively eliminates hurdles and challenges that may arise in one's journey.",
+            "The Namakarana Pooja seeks divine permission to christen the child's name, seeking protection from negative influences throughout their life. ",
         },
         {
-          title: "Dispelling Negativity: ",
+          title: "Evil Spirit Aversion: ",
           description:
-            "Engaging in this pooja eradicates negative influences, karmic complexities, and doshas present in the horoscope.",
-        },
-        {
-          title: " ",
-          description:
-            "TGathering the blessings of Goddess Lakshmi through this sacred ritual can usher in prosperity, abundance, and a path to inner growth, while simultaneously overcoming life's impediments.he pooja promotes a sense of harmony and tranquillity within the household.",
-        },
+            "The ritual helps ward off malevolent spirits that could potentially affect the child's destiny.",
+        }
+        
       ],
     },
     id: 12,
-    src: udakshanti,
+    src: Namakarana,
   },
 
   {
@@ -1059,7 +1068,7 @@ export const servicesData = [
       ],
     },
     id: 30,
-    src: Marriage,
+    src: GanapathiSthapana,
   },
 
   {
@@ -1094,7 +1103,7 @@ export const servicesData = [
       ],
     },
     id: 31,
-    src: udakshanti,
+    src: DiwaliLakshmiPuja,
   },
 
   {
@@ -1125,7 +1134,7 @@ export const servicesData = [
       ],
     },
     id: 32,
-    src: Satyanarayan,
+    src:  NavratriPuja,
   },
 
   {
@@ -1511,7 +1520,7 @@ export const servicesData = [
       ],
     },
     id: 42,
-    src: udakshanti,
+    src: KumbhaVivaha,
   },
 
   {
@@ -1548,7 +1557,7 @@ export const servicesData = [
       ],
     },
     id: 43,
-    src: Satyanarayan,
+    src: RahuBrihaspatiSandhiShanti,
   },
 
   {
@@ -1580,7 +1589,7 @@ export const servicesData = [
       ],
     },
     id: 44,
-    src: udakshanti,
+    src: SantanaGopalaHoma,
   },
 
   {
