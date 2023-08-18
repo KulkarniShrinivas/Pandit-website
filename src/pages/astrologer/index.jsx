@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./astrology.scss";
 import { astroData } from "../../data/astro-data";
 import CustomButton from "../../components/custom-button";
 import { whatsappData } from "../../utils/whatsapp";
 
 const Astrologer = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <div className="astrology-container">
       <h1 className="heading">
