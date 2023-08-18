@@ -9,6 +9,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer/footer";
 import { useMediaQuery } from "@mui/material";
 import FixedIcons from "./components/fixed-icons/fixedIcons";
+import AboutUsPage from "./pages/about-us-page/aboutUsPage";
 
 function App() {
   const isDesktopScreen = useMediaQuery("(min-width: 800px)");
@@ -26,6 +27,7 @@ function App() {
           <Route path="/photos/:id" element={<PhotoGallery />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/astrology" element={<Astrologer />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

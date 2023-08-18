@@ -1,9 +1,7 @@
 export const serviceCardStyles = (src) => ({
   boxSizing: "border-box",
   width: "300px",
-  height: "300px",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
+  height: "375px",
   border: "1px solid white",
   boxShadow: "12px 17px 51px rgba(0, 0, 0, 0.22)",
   backdropFilter: "blur(6px)",
@@ -26,10 +24,10 @@ export const serviceCardStyles = (src) => ({
     width: "100%",
     height: "80%",
     borderRadius: "17px 17px 0 0",
-    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${src})
-      center/cover no-repeat`,
+    backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(${src})`,
+    backgroundBlendMode: "multiply",
     backgroundPosition: "top",
+    backgroundSize: "cover",
   },
 
   "& .text": {
@@ -50,7 +48,7 @@ export const serviceCardStyles = (src) => ({
 
   "@media (min-width: 700px)": {
     width: "380px",
-    height: "380px",
+    height: "475px",
 
     "& .text h3": {
       fontSize: "1.25rem",
