@@ -17,6 +17,7 @@
     "@mui/material": "^5.14.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.2",
     "react-parallax-tilt": "^1.7.154",
     "react-particles": "^2.12.2",
     "react-responsive-carousel": "^3.2.23",

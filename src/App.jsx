@@ -10,6 +10,8 @@ import Footer from "./components/footer/footer";
 import { useMediaQuery } from "@mui/material";
 import FixedIcons from "./components/fixed-icons/fixedIcons";
 import AboutUsPage from "./pages/about-us-page/aboutUsPage";
+import Terms from "./pages/terms-condition/termsCondition";
+import Policy from "./pages/privacy-policy/Policy";
 
 function App() {
   const isDesktopScreen = useMediaQuery("(min-width: 800px)");
@@ -28,6 +30,8 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/astrology" element={<Astrologer />} />
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/terms-and-condition" element={<Terms />} />
+          <Route path="/policy" element={<Policy />} />
         </Routes>
         <Footer />
       </BrowserRouter>

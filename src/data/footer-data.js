@@ -23,5 +23,7 @@ export const footerData = {
     { title: "Astrology", link: "/astrology" },
     { title: "Photo Gallery", link: "/photos/all-photos" },
     { title: "All Puja Services", link: "/allpujas/pujas" },
+    { title: "Privacy Policy", link: "/policy" },
+    { title: "Terms and Condition", link: "/terms-and-condition" },
   ],
 };

@@ -12,6 +12,8 @@ const CardTilt = (props) => {
           background: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(${props.img})
       center/cover no-repeat`,
+          width: props?.width || "180px",
+          height: props?.width || "180px",
         }}
         className="tilt-card"
       >
