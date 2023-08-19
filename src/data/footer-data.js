@@ -8,14 +8,12 @@ export const footerData = {
           Coimbatore,and also in Gokarna and Srirangapatna, our puja services
           are available in a variety of languages such as Hindi, Telugu,
           Kannada, Marathi, and more.`,
-  number: "7982103213",
-  email: "knlarya97@gmail.com",
-  address: `Rz k-6,
-            New RoshanPura, Najafgarh
-            New delhi - 110043`,
+  number: "7899148582",
+  email: "marathisarvapooja@gmail.com",
+  address: `No. 123, 15th Cross Rd, Ittamadu, Banashankari 3rd Stage, Hosakerehalli, Bengaluru, Karnataka 560085dsfdaf`,
   fb_link: "https://www.fb.com",
-  insta_link: "https://www.insta.com",
-  whatsapp: "7982103213",
+  insta_link: "https://www.instagram.com/marathisarvapooja/",
+  whatsapp: "7899148582",
   main_links: [
     { title: "Home", link: "/" },
     { title: "My Journey", link: "/about-us" },
