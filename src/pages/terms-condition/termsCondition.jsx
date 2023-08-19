@@ -38,7 +38,7 @@ const TermsAndConditions = () => {
         If you have questions, contact us at marathisarvapooja@gmail.com.
       </p>
       <p>
-        <em>Note that these terms may change; review them to stay informed about your rights when using the website.</em>
+        <em> <b>Note that </b> these terms may change; review them to stay informed about your rights when using the website.</em>
       </p>
     </div>
   );
