@@ -1,6 +1,6 @@
 import { aboutUsPageData } from "../../../data/about-us-page-data";
 import "./aboutUsMain.scss";
-import ParticlesBackground from "./particlesConfig/ParticlesBackground";
+// import ParticlesBackground from "./particlesConfig/ParticlesBackground";
 
 const AboutUsMain = () => {
   return (

@@ -2,7 +2,6 @@ import panditImg from "../assets/Manoj_Kulkarni_Purohit.jpg";
 import gokarnaTemple from "../assets/about-us/gokarna_temple.jpg";
 import pashuTemple from "../assets/about-us/Pashupatinath_Temple.jpg";
 import kashiTemple from "../assets/about-us/Kashi_Vishwanath_Temple_Banaras.jpg";
-import indiaMap from "../assets/about-us/india_map.jpg";
 import dkShiv from "../assets/VIP-photos/panditforpujaI.jpg";
 import shivRaj from "../assets/VIP-photos/panditforpujaG.jpg";
 import formerPm from "../assets/VIP-photos/panditforpujaS.jpeg";
