@@ -1,3 +1,3 @@
 export const mainData = {
-  typeWriterText: ["Authentic Vedic Pooja", "Divine Pooja"],
+  typeWriterText: ["Authentic Vedic Puja", "In Traditional Way"],
 };
