@@ -11,48 +11,53 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer">
-      <div className="logo-details-container">
-        <img
-          className="logo-img"
-          src={footerData.logo}
-          alt="Marathi Sarvapooja Logo"
-        />
-        <p className="details">{footerData.footer_details}</p>
-      </div>
-      <div className="contact-details">
-        <div className="talk-to-us">
-          <h3>Talk to us</h3>
-          <a href={`tel:${contactData.info.phoneNo}`}>
-            {contactData.info.phoneNo}
-          </a>
-          <a href={`mailto:${contactData.info.email}`}>
-            {contactData.info.email}
-          </a>
+    <div className="footer-container">
+      <div className="footer">
+        <div className="logo-details-container">
+          <img
+            className="logo-img"
+            src={footerData.logo}
+            alt="Marathi Sarvapooja Logo"
+          />
+          <p className="details">{footerData.footer_details}</p>
         </div>
-        <div className="address">
-          <h3>Address</h3>
-          <p>{contactData.info.address}</p>
+        <div className="contact-details">
+          <div className="talk-to-us">
+            <h3>Talk to us</h3>
+            <a href={`tel:${contactData.info.phoneNo}`}>
+              {contactData.info.phoneNo}
+            </a>
+            <a href={`mailto:${contactData.info.email}`}>
+              {contactData.info.email}
+            </a>
+          </div>
+          <div className="address">
+            <h3>Address</h3>
+            <p>{contactData.info.address}</p>
+          </div>
+          <SocialMedia
+            whatsapp={footerData.whatsapp}
+            fb={contactData.socialMedia.fb}
+            insta={contactData.socialMedia.insta}
+          />
         </div>
-        <SocialMedia
-          whatsapp={footerData.whatsapp}
-          fb={contactData.socialMedia.fb}
-          insta={contactData.socialMedia.insta}
-        />
-      </div>
 
-      <div className="main-links">
-        <h3>Main Links</h3>
-        <ul>
-          {footerData.main_links.map((list) => (
-            <li>
-              <Link onClick={handleLinkClickHandler} to={list.link}>
-                {list.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="main-links">
+          <h3>Main Links</h3>
+          <ul>
+            {footerData.main_links.map((list) => (
+              <li>
+                <Link onClick={handleLinkClickHandler} to={list.link}>
+                  {list.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+      <p className="footer-right">
+        © 2023 MarathiSarvaPuja All rights reserved
+      </p>
     </div>
   );
 };
