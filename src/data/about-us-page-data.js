@@ -49,7 +49,7 @@ export const aboutUsPageData = {
     tumukar: {
       text: "Additionally, in the town of Huliyurdurga in Tumkur state, a Shata Chandi Yaga was organized at the <s>Vidya Chowdeshwari Temple.<s>",
       img: nagaArjun,
-      imgTitle: "Nagarjuna and rest are cast of movie Villians",
+      imgTitle: "Nagarjuna Rao Famous South Actor",
     },
     Bhud: "Moreover, in the village of Bhudihala in Tumkur, various rituals such as <s>Ayuta Chandi Yaga, Japa, Chandi Parayanam, Ashtavadhana Seva, and Yatha Shakti Seva<s> were performed with the participation of <s>nearly 3000 pandits<s>. These rituals were dedicated to goddesses Mahakali, Mahalaxmi, Chandika Durga Parameswari, showcasing deep devotion and reverence.",
     shrikant:
@@ -64,7 +64,7 @@ export const aboutUsPageData = {
     variousLocation: {
       text: "In revered locations like <s>Dakshin Kashi Gokarna and Mysore Talakaveri Kshetra Shrirangapattana<s>, I conduct a range of Homa Pooja ceremonies. These ceremonies include <s>Moksh Narayan Bali, Tripindi Shradha, Sarva Prayaschitta, and Tila Homa<s>, each performed with utmost devotion and precision.",
       img: Naga_chaitanya,
-      imgTitle: "Naga Chaitanya, Famous Telugu films",
+      imgTitle: "Naga Chaitanya, Famous Telugu Actor",
     },
     duniyaVijay: {
       text: "Across various states including <s>Pune, Mumbai, Delhi, Hyderabad, Tamil Nadu, Kerala, Goa, and Odisha<s>, as well as in cities like <s>Davangere, Dharwad, Hubli, Mandya, Mysore, Srirangapatna, Maddur, Ranibennur, Jalahalli, Banashankari, Vijaynagar, Kathriguppe, and Bangalore<s>, I have had the privilege to conduct a multitude of meaningful ceremonies. These ceremonies encompass a wide range of rituals, yagas, and homas. From Ashlesha Bali, Sarpa Samskara, and Sarpa Pratishthapanam to Pratyangira Homa, Aghorastra Homa, Sudarshana Yaga, and Chandi Yaga, I am dedicated to upholding the tradition and sanctity of these practices.",
