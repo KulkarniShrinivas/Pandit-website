@@ -14,8 +14,6 @@ export const ParticlesBackground = () => {
 
   return (
     <Particles
-      width="100vw"
-      height="100vh"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

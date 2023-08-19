@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 const ImgContainer = ({ img, title, width }) => {
   return (
     <div className="img">
-      <CardTilt width={width} img={img} />
+      <img width={width} src={img} />
       <Typography
         sx={{
           width,

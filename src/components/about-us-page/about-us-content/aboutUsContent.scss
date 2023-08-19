@@ -67,9 +67,14 @@
         gap: 0.5em;
         box-shadow: 0 0 10px var(--primary-color-extraLight);
         background-color: var(--primary-color);
+        border-radius: 5px;
 
         color: white;
         padding: 5px;
+
+        img {
+          border-radius: 5px;
+        }
       }
     }
   }
