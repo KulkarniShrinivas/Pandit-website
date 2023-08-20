@@ -132,7 +132,7 @@ export const servicesData = [
       "Griha Pravesh Puja and Vastu Shanti Puja mark important rituals performed before stepping into a new dwelling. These ceremonies hold the power to dispel negativity and doshas from the premises, ushering in a positive flow of energy. The act of performing Griha Pravesh not only blesses the inhabitants with peace and prosperity but also acts as a safeguard against natural calamities.",
     ],
     benefits: {
-      title: "dvantages of Vastu Shanti Puja:",
+      title: "Advantages of Vastu Shanti Puja:",
       points: [
         {
           title: "Energy Enhancement:",
@@ -147,7 +147,7 @@ export const servicesData = [
         {
           title: "Spiritual Aura:",
           description:
-            "he surroundings become sanctified, enveloped in divine vibes, and a sacred atmosphere.",
+            "The surroundings become sanctified, enveloped in divine vibes, and a sacred atmosphere.",
         },
         {
           title: "Obstacle Clearance:",

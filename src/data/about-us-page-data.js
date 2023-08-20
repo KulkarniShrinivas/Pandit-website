@@ -2,12 +2,12 @@ import panditImg from "../assets/Manoj_Kulkarni_Purohit.jpg";
 import gokarnaTemple from "../assets/about-us/gokarna_temple.jpg";
 import pashuTemple from "../assets/about-us/Pashupatinath_Temple.jpg";
 import kashiTemple from "../assets/about-us/Kashi_Vishwanath_Temple_Banaras.jpg";
-import dkShiv from "../assets/VIP-photos/panditforpujaI.jpg";
-import shivRaj from "../assets/VIP-photos/panditforpujaG.jpg";
-import formerPm from "../assets/VIP-photos/panditforpujaS.jpeg";
-import nagaArjun from "../assets/VIP-photos/panditforpujaN.jpg";
-import Naga_chaitanya from "../assets/VIP-photos/panditforpujaP.jpg";
-import duniya_Vijay from "../assets/VIP-photos/panditforpujaH.jpg";
+import dkShiv from "../assets/VIP-photos/panditforpujaI.webp";
+import shivRaj from "../assets/VIP-photos/panditforpujaG.webp";
+import formerPm from "../assets/VIP-photos/panditforpujaS.webp";
+import nagaArjun from "../assets/VIP-photos/panditforpujaN.webp";
+import Naga_chaitanya from "../assets/VIP-photos/panditforpujaP.webp";
+import duniya_Vijay from "../assets/VIP-photos/panditforpujaH.webp";
 
 export const aboutUsPageData = {
   main: {
@@ -33,7 +33,7 @@ export const aboutUsPageData = {
     hyderabad:
       "I have also gained experience in various states. In Hyderabad, I have conducted Shata Chandi Yaga, Rudra Yaga, Manyu Sukta Homa, as well as Lakshmi Narayana Parayana Japa Homa. Additionally, I have been involved in Japa Tapa, various Poojas, sacrifices, and Yagnas in the Hyderabad region.",
     formerPm: {
-      imgTitle: "H. D. Deve Gowda, Former PM of India",
+      imgTitle: "H.D. Deve Gowda, Former PM of India",
       img: formerPm,
     },
     differentStates:

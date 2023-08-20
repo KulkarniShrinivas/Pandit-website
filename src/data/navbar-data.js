@@ -4,10 +4,13 @@ export const navbarData = {
   logo,
   phoneNo: "7899148582",
   navList: [
+    { title: "My Journey", link: "/about-us" },
     { title: "All Puja Services", link: "/allpujas/pujas" },
-    { title: "Contact Us", link: "/contact" },
     { title: "Photo Gallery", link: "/photos/all-photos" },
     { title: "Astrology", link: "/astrology" },
-    { title: "My Journey", link: "/about-us" },
+    { title: "Contact Us", link: "/contact" },
+  
+   
+   
   ],
 };
