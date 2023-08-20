@@ -17,10 +17,10 @@ export const footerData = {
   main_links: [
     { title: "Home", link: "/" },
     { title: "My Journey", link: "/about-us" },
-    { title: "Contact Us", link: "/contact" },
-    { title: "Astrology", link: "/astrology" },
-    { title: "Photo Gallery", link: "/photos/all-photos" },
     { title: "All Puja Services", link: "/allpujas/pujas" },
+    { title: "Photo Gallery", link: "/photos/all-photos" },
+    { title: "Astrology", link: "/astrology" },
+    { title: "Contact Us", link: "/contact" },
     { title: "Privacy Policy", link: "/policy" },
     { title: "Terms and Condition", link: "/terms-and-condition" },
   ],

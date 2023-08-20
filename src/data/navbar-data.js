@@ -6,8 +6,8 @@ export const navbarData = {
   navList: [
     { title: "My Journey", link: "/about-us" },
     { title: "All Puja Services", link: "/allpujas/pujas" },
-    { title: "Contact Us", link: "/contact" },
     { title: "Photo Gallery", link: "/photos/all-photos" },
     { title: "Astrology", link: "/astrology" },
+    { title: "Contact Us", link: "/contact" },
   ],
 };
