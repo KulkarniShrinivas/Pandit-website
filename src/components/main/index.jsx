@@ -31,11 +31,11 @@ const Main = () => {
     <section className="main">
       {/* <div className="half-circle"></div>
       <div className="half-circle-2"></div> */}
-      <img loading="lazy" src={left} className="pattern-left" />
-      <img loading="lazy" src={right} className="pattern-right" />
+      <img src={left} className="pattern-left" />
+      <img src={right} className="pattern-right" />
       <div className="img-div">
         <Tilt>
-          <img loading="lazy" src={homeImg} alt="Ganesh Image" />
+          <img src={homeImg} alt="Ganesh Image" />
         </Tilt>
       </div>
 

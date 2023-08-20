@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutus.scss";
 import ownerData from "./ownerData";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -26,6 +27,9 @@ const AboutUs = () => {
         <h4>{ownerData.languageSubheading}</h4>
         <p>{ownerData.languageDescription}</p>
       </div>
+      <Link className="learn-more-link" to="about-us">
+        learn more about my journey...
+      </Link>
     </section>
   );
 };

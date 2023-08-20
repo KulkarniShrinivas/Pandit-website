@@ -9,7 +9,6 @@ const AboutUsMain = () => {
       <div className="about-us-main-img">
         <img
           src={aboutUsPageData.main.pandit_img}
-          loading="lazy"
           alt="Manoj Kulkarni Purohit"
         />
         <h1>{aboutUsPageData.main.pandit_name}</h1>
