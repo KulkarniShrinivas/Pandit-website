@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { aboutUsPageData } from "../../../data/about-us-page-data";
-import CardTilt from "../../card-tilt/cardTilt";
 import "./aboutUsContent.scss";
 import { Box, Typography } from "@mui/material";
-import Tilt from "react-parallax-tilt";
-import { useInView } from "react-intersection-observer";
 
 const ImgContainer = ({ img, title, width }) => {
   return (
@@ -35,11 +32,9 @@ const AboutUsContent = () => {
           </h2>
           <div className="container">
             {aboutUsPageData.content.languages.map((language) => (
-              <Tilt>
-                <div className="tilt">
-                  <h4>{language}</h4>
-                </div>
-              </Tilt>
+              <div className="tilt">
+                <h4>{language}</h4>
+              </div>
             ))}
           </div>
         </div>
