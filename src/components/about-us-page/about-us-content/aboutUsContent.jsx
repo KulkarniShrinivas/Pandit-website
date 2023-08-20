@@ -4,6 +4,7 @@ import "./aboutUsContent.scss";
 import { Box, Typography } from "@mui/material";
 
 const ImgContainer = ({ img, title, width }) => {
+  console.log(width);
   return (
     <div className="img">
       <img loading="lazy" width={width} src={img} />
