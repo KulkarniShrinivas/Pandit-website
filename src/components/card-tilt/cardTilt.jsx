@@ -9,14 +9,20 @@ const CardTilt = (props) => {
     <Tilt>
       <Box
         sx={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(${props.img})
-      center/cover no-repeat`,
           width: props?.width || "180px",
           height: props?.width || "180px",
         }}
         className="tilt-card"
       >
+        <div className="img-container">
+          <img
+            src={props.img}
+            loading="lazy"
+            alt={props.title}
+            className="service-img"
+          />
+          <div className="gradient-overlay"></div>
+        </div>
         <h3 className="card-tilt-heading">
           <Link className="card-tilt-tag" to={props.link}>
             {props.title}

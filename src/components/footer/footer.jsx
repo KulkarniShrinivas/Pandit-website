@@ -47,7 +47,7 @@ const Footer = () => {
           <h3>Main Links</h3>
           <ul>
             {footerData.main_links.map((list) => (
-              <li>
+              <li key={list.title}>
                 <Link onClick={handleLinkClickHandler} to={list.link}>
                   {list.title}
                 </Link>

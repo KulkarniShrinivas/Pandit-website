@@ -9,7 +9,7 @@ import { navbarData } from "../../data/navbar-data";
 
 const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
-  const isDesktopScreen = useMediaQuery("(min-width: 1000px)");
+  const isDesktopScreen = useMediaQuery("(min-width: 1200px)");
 
   return (
     <>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 >
                   {list.title}
                 </Link>
-                <div class="line"></div>
+                <div className="line"></div>
               </li>
             ))}
           </ul>

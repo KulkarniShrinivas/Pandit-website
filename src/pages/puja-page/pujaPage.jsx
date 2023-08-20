@@ -20,26 +20,33 @@ const PujaPage = () => {
     <>
       {pujaData && (
         <main className="puja-details-card">
-          <div className="puja-image">
-            <Tilt>
-              <Box
-                sx={{
-                  borderRadius: "10px",
-                  width: "300px",
-                  height: "300px",
-                  backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(${pujaData?.src})`,
-                  backgroundBlendMode: "multiply",
-                  backgroundSize: "cover",
-                  backgroundPostion: "top",
+          <Tilt>
+            <Box
+              sx={{
+                borderRadius: "10px",
+                width: "300px",
+                height: "300px",
+                position: "relative",
+                overflow: "hidden",
 
-                  "@media(min-width:1000px)": {
-                    height: "400px",
-                    width: "400px",
-                  },
-                }}
-              ></Box>
-            </Tilt>
-          </div>
+                "@media (min-width: 1000px)": {
+                  width: "400px",
+                  height: "400px",
+                },
+              }}
+              className="tilt-card"
+            >
+              <div className="img-container">
+                <img
+                  src={pujaData?.src}
+                  alt={pujaData?.title}
+                  loading="lazy"
+                  className="service-img"
+                />
+                <div className="gradient-overlay"></div>
+              </div>
+            </Box>
+          </Tilt>
 
           <div className="puja-text-container">
             <div className="puja-header">
