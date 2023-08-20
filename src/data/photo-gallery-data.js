@@ -19,20 +19,15 @@ import marathipanditP from "../assets/gallery/marathipanditP.webp";
 import PanditforpujaA from "../assets/gallery/panditforpujaA.webp";
 import PanditforpujaM from "../assets/gallery/panditforpujaM.webp";
 
-
-
-
 //VIP Photos
 
 import PanditforpujaB from "../assets/VIP-photos/panditforpujaB.webp";
 import PanditforpujaC from "../assets/VIP-photos/panditforpujaC.webp";
 import PanditforpujaD from "../assets/VIP-photos/panditforpujaD.webp";
-// import PanditforpujaE from "../assets/VIP-photos/panditforpujaE.webp";
 import PanditforpujaF from "../assets/VIP-photos/panditforpujaF.webp";
 import PanditforpujaG from "../assets/VIP-photos/panditforpujaG.webp";
 import PanditforpujaH from "../assets/VIP-photos/panditforpujaH.webp";
 import PanditforpujaI from "../assets/VIP-photos/panditforpujaI.webp";
-import PanditforpujaJ from "../assets/VIP-photos/panditforpujaJ.webp";
 import PanditforpujaK from "../assets/VIP-photos/panditforpujaK.webp";
 import PanditforpujaL from "../assets/VIP-photos/panditforpujaL.webp";
 
@@ -44,8 +39,6 @@ import PanditforpujaR from "../assets/VIP-photos/panditforpujaR.webp";
 import PanditforpujaS from "../assets/VIP-photos/panditforpujaS.webp";
 import PanditforpujaT from "../assets/VIP-photos/panditforpujaT.webp";
 import PanditforpujaU from "../assets/VIP-photos/panditforpujaU.webp";
-
-
 
 export const btnTextPhoto = [
   { text: "VIP Photos", category: "vip-photos" },
@@ -73,7 +66,7 @@ export const vipPhotosData = [
   { img: PanditforpujaL, title: "", rows: 2, cols: 2 },
   { img: PanditforpujaO, title: "", rows: 3, cols: 2 },
   { img: PanditforpujaR, title: "", rows: 2, cols: 2 },
-  { img: PanditforpujaT, title: "", rows: 7, cols: 2 },
+  { img: PanditforpujaT, title: "", rows: 2, cols: 2 },
   { img: PanditforpujaU, title: "", rows: 2, cols: 2 },
 ];
 
