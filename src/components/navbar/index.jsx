@@ -18,6 +18,7 @@ const Navbar = () => {
           <div className="logo-container">
             <Link to="/">
               <img
+                loading="lazy"
                 className="nav-logo"
                 src={navbarData.logo}
                 alt="MarathiSarvaPooja Logo"

@@ -6,7 +6,7 @@ import { Box, Typography } from "@mui/material";
 const ImgContainer = ({ img, title, width }) => {
   return (
     <div className="img">
-      <img width={width} src={img} />
+      <img loading="lazy" width={width} src={img} />
       <Typography
         sx={{
           width,
