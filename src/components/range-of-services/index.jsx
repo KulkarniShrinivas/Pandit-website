@@ -12,9 +12,9 @@ const RangeOfServices = () => {
     <Box className="range-of-services">
       <div className="flowerdiv">
         {!isMobileScreen ? (
-          <img src={bigFlowerLine} alt="A line of Flowers" />
+          <img loading="lazy" src={bigFlowerLine} alt="A line of Flowers" />
         ) : (
-          <img src={flowersLine} alt="A line of Flowers" />
+          <img loading="lazy" src={flowersLine} alt="A line of Flowers" />
         )}
       </div>
 

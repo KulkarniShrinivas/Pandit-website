@@ -35,7 +35,7 @@ const Main = () => {
       <img src={right} className="pattern-right" />
       <div className="img-div">
         <Tilt>
-          <img src={homeImg} />
+          <img src={homeImg} alt="Ganesh Image" />
         </Tilt>
       </div>
 

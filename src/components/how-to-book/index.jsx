@@ -34,7 +34,7 @@ export default function HowToBook() {
               <TimelineConnector />
               <TimelineDot color={T.timeline_dot_color}>
                 <Icon sx={timelineIcon}>
-                  <img src={T.img.src} alt={T.img.alt} />
+                  <img loading="lazy" src={T.img.src} alt={T.img.alt} />
                 </Icon>
               </TimelineDot>
               <TimelineConnector sx={timelineConnectorStyles} />

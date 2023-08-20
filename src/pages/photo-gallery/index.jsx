@@ -91,7 +91,7 @@ const PhotoGallery = () => {
       >
         <DialogTitle></DialogTitle>
         <DialogContent>
-          <img src={dialogOpen.img} alt={dialogOpen.title} />
+          <img loading="lazy" src={dialogOpen.img} alt={dialogOpen.title} />
         </DialogContent>
       </Dialog>
     </main>

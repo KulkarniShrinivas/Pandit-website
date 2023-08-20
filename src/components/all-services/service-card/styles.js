@@ -20,16 +20,30 @@ export const serviceCardStyles = (src) => ({
     transform: "scale(1.02) rotateZ(1.7deg)",
   },
 
-  "& .img": {
+  "& .img-container": {
+    position: "relative",
     width: "100%",
     height: "80%",
     borderRadius: "17px 17px 0 0",
-    backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(${src})`,
-    backgroundBlendMode: "multiply",
-    backgroundPosition: "top",
-    backgroundSize: "cover",
-  },
+    overflow: "hidden",
 
+    "& .service-img": {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    },
+
+    "& .gradient-overlay": {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background:
+        "linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73))",
+      mixBlendMode: "multiply",
+    },
+  },
   "& .text": {
     width: "100%",
     borderRadius: "0 0 17px 17px",

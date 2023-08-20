@@ -16,6 +16,7 @@ const ImageSlider = () => {
       {data.map((image) => (
         <div>
           <img
+            loading="lazy"
             src={image.src}
             alt={`${image.legend} image`}
             className="carousel-img"

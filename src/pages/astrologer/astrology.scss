@@ -14,36 +14,64 @@
     }
   }
 
-  .astro-about {
+  .astro-container {
     max-width: 1000px;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    .owner-item {
+    margin: 0 auto;
+    .subhead {
+      .h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .astro-about {
+      max-width: 1000px;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
 
-      h3 {
-        font-size: 2rem;
+      .owner-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        h3 {
+          font-size: 2rem;
+        }
+
+        h4 {
+          font-weight: 600;
+        }
       }
+    }
 
-      h4 {
-        font-weight: 600;
+    .astrology-para {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      p {
+        line-height: 1.6;
+        text-align: left;
       }
     }
   }
+}
 
-  .astrology-para {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    p {
-      max-width: 1000px;
-      line-height: 1.6;
+@media (min-width: 800px) {
+  .astrology-container {
+    .astro-container {
+      .subhead {
+        .h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .astro-about {
+        flex-direction: row;
+      }
     }
   }
 }
