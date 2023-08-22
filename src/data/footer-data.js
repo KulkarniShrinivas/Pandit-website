@@ -18,7 +18,7 @@ export const footerData = {
     { title: "Home", link: "/" },
     { title: "My Journey", link: "/about-us" },
     { title: "All Puja Services", link: "/allpujas/pujas" },
-    { title: "Photo Gallery", link: "/photos/all-photos" },
+    { title: "Photo Gallery", link: "/photos/vip-photos" },
     { title: "Astrology", link: "/astrology" },
     { title: "Contact Us", link: "/contact" },
     { title: "Privacy Policy", link: "/policy" },
