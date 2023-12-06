@@ -1,5 +1,6 @@
 //All photos
 
+import Hanuman from "../assets/gallery/hanuman.jpg";
 import marathipanditA from "../assets/gallery/marathipanditA.webp";
 import marathipanditB from "../assets/gallery/marathipanditB.webp";
 import marathipanditC from "../assets/gallery/marathipanditC.webp";
@@ -19,8 +20,10 @@ import marathipanditP from "../assets/gallery/marathipanditP.webp";
 import PanditforpujaA from "../assets/gallery/panditforpujaA.webp";
 import PanditforpujaM from "../assets/gallery/panditforpujaM.webp";
 
+
 //VIP Photos
 
+import RSS from "../assets/VIP-photos/RSS.jpg"
 import PanditforpujaB from "../assets/VIP-photos/panditforpujaB.webp";
 import PanditforpujaC from "../assets/VIP-photos/panditforpujaC.webp";
 import PanditforpujaD from "../assets/VIP-photos/panditforpujaD.webp";
@@ -57,6 +60,7 @@ export const vipPhotosData = [
   { img: PanditforpujaK, title: "", rows: 5, cols: 2 },
   { img: PanditforpujaH, title: "", rows: 3, cols: 2 },
   { img: PanditforpujaF, title: "", rows: 3, cols: 2 },
+  { img: RSS, title: "", rows:3, cols: 2},
 
   //normal
 
@@ -71,6 +75,7 @@ export const vipPhotosData = [
 ];
 
 export const photoGalleryData = [
+  {img: Hanuman, title: "", rows:3, cols:2},
   { img: marathipanditA, title: "", rows: 3, cols: 2 },
   { img: marathipanditB, title: "", rows: 3, cols: 2 },
   { img: marathipanditC, title: "", rows: 3, cols: 2 },
