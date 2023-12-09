@@ -61,7 +61,7 @@ export const serviceCardStyles = (src) => ({
     },
   },
 
-  "@media (min-width: 700px)": {
+  "@media (min-width: 600px)": {
     width: "380px",
     height: "475px",
 
