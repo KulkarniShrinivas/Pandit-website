@@ -12,6 +12,26 @@
       gtag('config', 'G-3NRQN0NYBE');
     </script>
 
+    <!--Convertion tag for Google ads-->
+
+        <!-- Event snippet for Marathi Guruji in Bangalore conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11404022969/UxP_CKTN4YAZELmp7r0q',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>
+  
+
 
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
