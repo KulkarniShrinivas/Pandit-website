@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NRQN0NYBE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3NRQN0NYBE');
+    </script>
+
+    <!--Convertion tag for Google ads-->
+
+        <!-- Event snippet for Marathi Guruji in Bangalore conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11404022969/UxP_CKTN4YAZELmp7r0q',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>
+
+          <!-- Event snippet for Marathi Guruji in Bangalore conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-11404022969/UxP_CKTN4YAZELmp7r0q'});
+    </script>
+
+  
+
+
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,7 +47,16 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+    <meta
+      name="description"
+      content="Experienced Marathi Pandits/Guruji in Bangalore for Puja/Homa or Havan. Book now at Marathisarvapooja.com or call ⭐ 7899148582. We offer puja services in different languages like Marathi, Kannada, Hindi, Tamil, Telugu. ⭐15+ Years Experienced ⭐11000+ Puja's Performed"
+    />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./src/assets/logo.png" />
+
+    <title>Pandit in Bangalore
+      Book Verified Pandits Online for Puja/Homa or Havan - Marathisarvapooja</title>
   </head>
   <body>
     <div id="root"></div>

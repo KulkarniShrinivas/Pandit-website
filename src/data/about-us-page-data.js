@@ -16,7 +16,7 @@ export const aboutUsPageData = {
   },
   content: {
     gokarna: {
-      text: "I possess 12 years of experience in performing Pooja, Homa, and havan daily at the renowned <s>Gokarna Mahabaleshwaram<s> in South Kashi.",
+      text: "I have 15+ years of experience in performing Pooja, Homa, and havan daily at the renowned <s>Gokarna Mahabaleshwaram<s> in South Kashi.",
       img: gokarnaTemple,
       imgTitle: "Gokarna Mahabaleshwaram Temple in South Kashi",
     },
